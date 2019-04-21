@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://zyunn.com/2019/04/21/hello-world/</loc>
+    
+    <lastmod>2019-04-21T11:12:10.998Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://zyunn.com/about/index.html</loc>
     
     <lastmod>2019-04-21T09:13:40.066Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://zyunn.com/categories/index.html</loc>
     
     <lastmod>2019-04-21T09:08:20.563Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://zyunn.com/2019/04/20/hello-world/</loc>
-    
-    <lastmod>2019-04-20T12:11:37.894Z</lastmod>
     
   </url>
   
