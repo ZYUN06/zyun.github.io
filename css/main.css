@@ -1201,7 +1201,7 @@ pre .javascript .function {
 }
 .menu .menu-item a {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   line-height: inherit;
   border-bottom: 1px solid transparent;
   transition-property: border-color;
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f116e5;
+  background: #fac7a8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1947,7 +1947,7 @@ pre .javascript .function {
   color: #999;
 }
 .footer img {
-  border: none;
+  border: 1px;
 }
 .footer-inner {
   text-align: center;
@@ -2895,7 +2895,7 @@ hr {
   color: #666;
 }
 .footer-inner {
-  margin: 0 auto;
+  vertical-align: middle;
   text-align: left;
 }
 @media (max-width: 767px) {
