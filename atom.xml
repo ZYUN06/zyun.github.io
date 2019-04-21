@@ -3,11 +3,11 @@
   <title>ZYUN</title>
   
   
-  <link href="/zyun.github.io/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://zyun06.github.io/zyun.github.io/"/>
+  <link href="http://zyunn.com/"/>
   <updated>2019-04-20T12:11:37.894Z</updated>
-  <id>https://zyun06.github.io/zyun.github.io/</id>
+  <id>http://zyunn.com/</id>
   
   <author>
     <name>ZYUN</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://zyun06.github.io/zyun.github.io/2019/04/20/hello-world/"/>
-    <id>https://zyun06.github.io/zyun.github.io/2019/04/20/hello-world/</id>
+    <link href="http://zyunn.com/2019/04/20/hello-world/"/>
+    <id>http://zyunn.com/2019/04/20/hello-world/</id>
     <published>2019-04-20T12:11:37.894Z</published>
     <updated>2019-04-20T12:11:37.894Z</updated>
     
