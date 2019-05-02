@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1c6c9e;
+  background: #0ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2921,4 +2921,13 @@ blockquote.question {
 .post-body p a:hover {
   color: #005fb2;
   text-decoration: underline;
+}
+.post-copyright {
+  color: #666;
+  font-size: 12px;
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #cbcbcb;
+  background-color: #f9f9f9;
+  list-style: none;
 }
