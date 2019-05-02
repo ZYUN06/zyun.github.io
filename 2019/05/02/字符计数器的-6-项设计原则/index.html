@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://zyunn.com/2019/05/02/字符计数器的-6-项设计原则/character-twitter.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/字符计数器的-6-项设计原则/character-soverflow.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/字符计数器的-6-项设计原则/character-red.png">
-<meta property="og:updated_time" content="2019-05-02T07:14:19.539Z">
+<meta property="og:updated_time" content="2019-05-02T07:20:12.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="译 | 字符计数器的 6 项设计原则">
 <meta name="twitter:description" content="原文：Character count design: some guidelines作者：Jimmy Breck-McKye (2012-05-30)阅读时长：7m22s   字符数限制在互联网产品中无处不在，尤其是在依赖于用户产生内容的应用中。尽管如此常见，字符数限制却总被设计得很糟糕。值得庆幸的是，通过遵循以下 6 个关于输入长度限制设计与字符计数器显示的简单原则，便可使输入受字符数限制的文">
@@ -394,6 +394,8 @@
 <p><strong>4. 在用户的输入达到最大限制字数后，也要允许用户继续输入。</strong><br>有一些字符计数器是，当用户达到最大字数限制后，就禁止用户输入了。这是很糟糕的一种设计方式，首先，这样可能使用户复制粘贴的内容被截断；另外，在原本完整的文本内容上进行修改总是比在被截断所以不完整的内容上修改来得容易。</p>
 <p><strong>5. 当用户的输入超出最大限制字数时，让用户清晰地知道哪些内容是超出的。</strong><br>例如，第 2 点中，将输入框的初始高度设置为刚好输入最大限制字数时的高度，这样，用户就知道超出这个输入框的部分就是超出的，需要把内容删减到能在这个输入框内完整显示；另一个更好的方式是，将超出最大字数限制的那部分文本变为红色。</p>
 <p><strong>6. 如果用户输入的内容超出限定的最大字数，说明他们很可能正在以一种不恰当的方式使用这个输入框，这种情况下，可利用错误信息引导用户改用更适合他们想输入的内容的途径或文本框。</strong></p>
+<blockquote class="question"> 其他相关讨论：<a href="https://ux.stackexchange.com/questions/60515/what-is-the-best-placement-of-character-counter-relative-to-the-text-field" target="_blank" rel="noopener">字符计数器应该放置在相应文本框的什么位置？</a></blockquote>
+
 <p><br></p>
 <hr>
 <p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>
