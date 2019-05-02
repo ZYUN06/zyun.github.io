@@ -101,7 +101,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/复选框与单选按钮的-12-个可用性问题/来自一个网站的注册页面.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/复选框与单选按钮的-12-个可用性问题/一个水平布局的单选按钮列表.png">
-<meta property="og:updated_time" content="2019-05-02T14:19:52.055Z">
+<meta property="og:updated_time" content="2019-05-02T14:21:57.304Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="译 | 复选框与单选按钮的 12 个可用性问题">
 <meta name="twitter:description" content="原文：Checkboxes vs. Radio Buttons作者：Jakob Nielsen (2004-09-27)阅读时长：8m56s   摘要：何时使用复选框控件与何时使用单选按钮控件的用户界面设计指南。关于复选框与单选按钮的 12 个可用性问题。">
@@ -412,7 +412,7 @@
 </li>
 <li><p><strong>让用户通过点击按钮 / 复选框本身或它的标签来选择一个选项</strong>：根据<a href="http://www.asktog.com/columns/022DesignedToGiveFitts.html" target="_blank" rel="noopener">费茨定律</a>，点击目标越大越易于点击。在 HTML 表单中，通过<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank" rel="noopener">使用「Label」元素对每个标签进行编码</a>，可轻松实现这一点，就像我在上面的水平单选按钮示例中所展示的那样（点击单词「Four」可选中该选项）。（译者注：上面那个水平单选按钮的图片截自原文网页页面，原页面上是可交互的）。在对<a href="https://www.nngroup.com/articles/ephemeral-web-based-applications/" target="_blank" rel="noopener">Flash 中基于 Web 的应用</a>的测试中，我们发现，通过在可视点击区域以外增加一些像素来增大点击区域的话，可使用户的错误远远减少。（这种效果在 HTML 中很难实现，尽管一些 CSS 技巧可能会奏效。）</p>
 </li>
-<li><p><strong>复选框和单选按钮只用于改变设置，而不是作为动作按钮来使某些事件发生</strong>。此外，在用户单击命令按钮（如标签为「确定」，或者「继续进行 XXX（XXX 为进程中的下一步）」）之前，这些更改的设置不会生效。<br>• &nbsp; 如果用户点击了「后退」按钮，则对页面上的复选框和单选按钮所做的任何更改都应被取消，并恢复原有的设置。如果用户点击了「取消」按钮，相同的准则也是成立的（虽然导航网页并<a href="https://www.nngroup.com/articles/reset-and-cancel-buttons/" target="_blank" rel="noopener">不需要「取消」按钮</a>，因为「后退」按钮的作用是相同的）。<br>• &nbsp; 如果用户点击「后退」按钮后，又点击了「前进」按钮，那这种情况按「撤销 - 重做」的顺序来理解是最合适的，这意味着控件的外观应该呈现用户的更改，就像用户从未点击过「后退」一样。在用户点击「确定」或其他相同的命令之前，这些更改仍然不会对后端起作用。</p>
+<li><p><strong>复选框和单选按钮只用于改变设置，而不是作为动作按钮来使某些事件发生</strong>。此外，在用户单击命令按钮（如标签为「确定」，或者「继续进行 XXX（XXX 为进程中的下一步）」）之前，这些更改的设置不会生效。<br>• &nbsp; 如果用户点击了「后退」按钮，则对页面上的复选框和单选按钮所做的任何更改都应被取消，并恢复原有的设置。如果用户点击了「取消」按钮，相同的准则也是成立的（虽然导航网页并<a href="https://www.nngroup.com/articles/reset-and-cancel-buttons/" target="_blank" rel="noopener">不需要「取消」按钮</a>，因为「后退」按钮的作用是相同的）。<br>• &nbsp; 如果用户点击「后退」按钮后，又点击了「前进」按钮，那这种情况按「撤销 - 重做」的顺序来理解是最合适的，这意味着控件的外观应该呈现用户的更改，就像用户从未点击过「后退」一样。在用户点击「确定」或其他相同的命令之前，这些更改仍然不会对后端起作用。<br><br></p>
 </li>
 </ol>
 <h1 id="为什么这些准则很重要"><a href="#为什么这些准则很重要" class="headerlink" title="为什么这些准则很重要"></a>为什么这些准则很重要</h1><p>当我在坚持复选框和单选按钮的正确使用时，我是不是太挑剔了？不。<a href="https://www.nngroup.com/articles/do-interface-standards-stifle-design-creativity/" target="_blank" rel="noopener">遵循 GUI 标准和正确使用控件有着很重要的可用性原因</a>。</p>
