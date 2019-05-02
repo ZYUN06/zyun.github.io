@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff450d;
+  background: #9f0b5b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2908,11 +2908,13 @@ hr {
 blockquote.question {
   color: #666;
   font-size: 16px;
+  margin: 2em 0 0;
+  padding: 0.5em 1em;
   border-left: 4px solid #cbcbcb;
   background-color: #f8f8f8;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  margin-bottom: 100px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-bottom: 16px;
 }
 .post-body p a {
   color: #0070d2;
