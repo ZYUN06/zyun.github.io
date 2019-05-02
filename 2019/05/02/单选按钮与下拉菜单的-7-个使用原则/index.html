@@ -8,6 +8,16 @@
 <html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
+<script>
+    (function(){
+        if(''){
+            if (prompt('叮咚～这篇文章只是我自个儿的碎碎念儿，不看也可以吖。实在非得看，也可以在下面输入密码 201905 哟。') !== ''){
+                alert('我也不知道它为啥要再弹一次，要不再点一次「确定」吧～点完就会回到原来的页面啦～今天也要开心点哟 ^^');
+                history.back();
+            }
+        }
+    })();
+</script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
@@ -81,13 +91,13 @@
 
 
 
-<meta name="description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。 输入控件、输入校验、错误处理、">
+<meta name="description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。">
 <meta name="keywords" content="译文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="译 | 单选按钮与下拉菜单的 7 个使用原则">
 <meta property="og:url" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/index.html">
 <meta property="og:site_name" content="ZYUN">
-<meta property="og:description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。 输入控件、输入校验、错误处理、">
+<meta property="og:description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/when-options-need-to-be-emphasize.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/less-number-of-options.png">
@@ -97,10 +107,10 @@
 <meta property="og:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/A-lot-of-familiar-options.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/More-than-7-options.png">
 <meta property="og:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/Enter-option-to-filter-the-list.png">
-<meta property="og:updated_time" content="2019-05-02T08:58:11.303Z">
+<meta property="og:updated_time" content="2019-05-02T09:39:56.423Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="译 | 单选按钮与下拉菜单的 7 个使用原则">
-<meta name="twitter:description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。 输入控件、输入校验、错误处理、">
+<meta name="twitter:description" content="原文：7 Rules of Using Radio Buttons vs Drop-Down Menus作者：Saadia Minhas (2018-05-06)阅读时长：3m43s   不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。">
 <meta name="twitter:image" content="http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/when-options-need-to-be-emphasize.png">
 
 
@@ -367,9 +377,9 @@
       
         <blockquote class="question"> 原文：<a href="https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1" target="_blank" rel="noopener">7 Rules of Using Radio Buttons vs Drop-Down Menus</a><br>作者：Saadia Minhas (2018-05-06)<br>阅读时长：3m43s </blockquote>
 
-<p>不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。</p>
+<p>不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。<a id="more"></a> </p>
 <p>输入控件、输入校验、错误处理、用户反馈等等，都是可用表单中的一些项目。</p>
-<p>单选按钮和下拉菜单是其中两个非常重要的输入控件。当用户需要输入时，它们可以互换使用。然而，如果我们仔细研究这两个控件的可用性，很明显，它们都有各自特定的使用场景，以便用户更简单地选择给定的输入。<a id="more"></a> </p>
+<p>单选按钮和下拉菜单是其中两个非常重要的输入控件。当用户需要输入时，它们可以互换使用。然而，如果我们仔细研究这两个控件的可用性，很明显，它们都有各自特定的使用场景，以便用户更简单地选择给定的输入。</p>
 <p>以下是基于这个可用性研究的一些使用原则，它们将有助于你在设计表单时决定使用哪个控件更合适。<br><br></p>
 <h1 id="使用单选按钮"><a href="#使用单选按钮" class="headerlink" title="使用单选按钮"></a>使用单选按钮</h1><h3 id="1-当需要强调选项时"><a href="#1-当需要强调选项时" class="headerlink" title="#1 当需要强调选项时"></a>#1 当需要强调选项时</h3><p>下面是一些需要强调选项的情况：<br>• &nbsp; 没有明确的默认选项或推荐选项<br>• &nbsp; 希望用户阅读所有选项<br>• &nbsp; 用户不熟悉这些选项，并且较少有机会甚至没有机会预知它们</p>
 <img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/when-options-need-to-be-emphasize.png">
@@ -400,8 +410,7 @@
 <p>此外，对于长下拉列表，提供文本输入框是一个不错的方法。用户在其中输入选项名称后，列表仅显示出过滤选项。这将使选择更轻松快捷。</p>
 <img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/Enter-option-to-filter-the-list.png">
 <p><center><p style="font-size:12px; color:#C0C0C0">输入选项来过滤列表</p><center></center></center></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>为提高表单的用户体验，提供正确的控件以便用户输入是非常重要的。由于大量的选项会使表单变得很长，如果用户需要额外点击来输入信息的话，这将变得十分枯燥。<br>以上这些规则将帮助你决定在设计表单时使用哪个控件，单选按钮或者下拉菜单。</p>
-<p><br></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>为提高表单的用户体验，提供正确的控件以便用户输入是非常重要的。由于大量的选项会使表单变得很长，如果用户需要额外点击来输入信息的话，这将变得十分枯燥。<br>以上这些规则将帮助你决定在设计表单时使用哪个控件，单选按钮或者下拉菜单。<br><br></p>
 <hr>
 <p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>
 
@@ -445,6 +454,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/02/复选框与单选按钮的-12-个可用性问题/" rel="prev" title="译 | 复选框与单选按钮的 12 个可用性问题">
+                译 | 复选框与单选按钮的 12 个可用性问题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>

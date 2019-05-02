@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyunn.com/"/>
-  <updated>2019-05-02T08:58:11.303Z</updated>
+  <updated>2019-05-02T10:13:14.635Z</updated>
   <id>http://zyunn.com/</id>
   
   <author>
@@ -17,21 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>译 | 复选框与单选按钮的 12 个可用性问题</title>
+    <link href="http://zyunn.com/2019/05/02/%E5%A4%8D%E9%80%89%E6%A1%86%E4%B8%8E%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E7%9A%84-12-%E4%B8%AA%E5%8F%AF%E7%94%A8%E6%80%A7%E9%97%AE%E9%A2%98/"/>
+    <id>http://zyunn.com/2019/05/02/复选框与单选按钮的-12-个可用性问题/</id>
+    <published>2019-05-02T09:04:40.000Z</published>
+    <updated>2019-05-02T10:13:14.635Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="question"> 原文：<a href="https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1" target="_blank" rel="noopener">7 Rules of Using Radio Buttons vs Drop-Down Menus</a><br>作者：Saadia Minhas (2018-05-06)<br>阅读时长：3m43s </blockquote><p>摘要：何时使用复选框控件与何时使用单选按钮控件的用户界面设计指南。关于复选框与单选按钮的 12 个可用性问题。<br><a id="more"></a></p><p>我最近在一个网站的注册页面中遇到了下面这个提示框。它包含了至少 2 个设计上的错误。在进一步阅读之前，试试你能否找出来吧。</p><p><center><p style="font-size:12px; color:#C0C0C0">当需要强调选项时</p><center></center></center></p><p><br></p><hr><p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;question&quot;&gt; 原文：&lt;a href=&quot;https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;7 Rules of Using Radio Buttons vs Drop-Down Menus&lt;/a&gt;&lt;br&gt;作者：Saadia Minhas (2018-05-06)&lt;br&gt;阅读时长：3m43s &lt;/blockquote&gt;
+
+&lt;p&gt;摘要：何时使用复选框控件与何时使用单选按钮控件的用户界面设计指南。关于复选框与单选按钮的 12 个可用性问题。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="译文" scheme="http://zyunn.com/categories/%E8%AF%91%E6%96%87/"/>
+    
+    
+      <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
     <title>译 | 单选按钮与下拉菜单的 7 个使用原则</title>
     <link href="http://zyunn.com/2019/05/02/%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E4%B8%8E%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%9A%84-7-%E4%B8%AA%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%88%99/"/>
     <id>http://zyunn.com/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/</id>
     <published>2019-05-02T07:45:14.000Z</published>
-    <updated>2019-05-02T08:58:11.303Z</updated>
+    <updated>2019-05-02T09:39:56.423Z</updated>
     
-    <content type="html"><![CDATA[<blockquote class="question"> 原文：<a href="https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1" target="_blank" rel="noopener">7 Rules of Using Radio Buttons vs Drop-Down Menus</a><br>作者：Saadia Minhas (2018-05-06)<br>阅读时长：3m43s </blockquote><p>不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。</p><p>输入控件、输入校验、错误处理、用户反馈等等，都是可用表单中的一些项目。</p><p>单选按钮和下拉菜单是其中两个非常重要的输入控件。当用户需要输入时，它们可以互换使用。然而，如果我们仔细研究这两个控件的可用性，很明显，它们都有各自特定的使用场景，以便用户更简单地选择给定的输入。<a id="more"></a> </p><p>以下是基于这个可用性研究的一些使用原则，它们将有助于你在设计表单时决定使用哪个控件更合适。<br><br></p><h1 id="使用单选按钮"><a href="#使用单选按钮" class="headerlink" title="使用单选按钮"></a>使用单选按钮</h1><h3 id="1-当需要强调选项时"><a href="#1-当需要强调选项时" class="headerlink" title="#1 当需要强调选项时"></a>#1 当需要强调选项时</h3><p>下面是一些需要强调选项的情况：<br>• &nbsp; 没有明确的默认选项或推荐选项<br>• &nbsp; 希望用户阅读所有选项<br>• &nbsp; 用户不熟悉这些选项，并且较少有机会甚至没有机会预知它们</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/when-options-need-to-be-emphasize.png"><p><center><p style="font-size:12px; color:#C0C0C0">当需要强调选项时</p><center></center></center></p><p>在上面这个例子中，使用下拉菜单并不是一个很好的方案，因为默认选项并没有提供关于其他选项的线索。</p><h3 id="2-当选项少于-5-个时"><a href="#2-当选项少于-5-个时" class="headerlink" title="#2 当选项少于 5 个时"></a>#2 当选项少于 5 个时</h3><p>选项较少时最好并排放置，以便：<br>• &nbsp; 用户可轻松快速的浏览所有选项<br>• &nbsp; 提供快速响应，而不是打开下拉菜单后再从多个选项中进行选择</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/less-number-of-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">选项较少时</p><center></center></center></p><p>如上面的例子所示，当用户需要从 2 至 4 个选项中进行选择时，使用单选按钮更合适。</p><h3 id="3-当选项之间需要进行明确的比较时"><a href="#3-当选项之间需要进行明确的比较时" class="headerlink" title="#3 当选项之间需要进行明确的比较时"></a>#3 当选项之间需要进行明确的比较时</h3><p>可比较的选项最好并排放置，因为：<br>• &nbsp; 用户可对所有选项一目了然，并轻松进行比较<br>• &nbsp; 从下拉菜单中比较和确定选项需要耗费时间<br>• &nbsp; 如果使用下拉菜单，那么用户每次需要检查已选项时，都必须再次打开下拉菜单对选项进行比较</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/comparison-of-options-is-required.png"><p><center><p style="font-size:12px; color:#C0C0C0">当需要比较选项时</p><center></center></center></p><p>上面这个比较好的例子是，关于用户必须做出严肃决定的订阅计划的选择。</p><h3 id="4-当需要优先考虑可见性和快速响应时"><a href="#4-当需要优先考虑可见性和快速响应时" class="headerlink" title="#4 当需要优先考虑可见性和快速响应时"></a>#4 当需要优先考虑可见性和快速响应时</h3><p>清晰的可见性及选项的可快速浏览对用户来说更容易理解。<br>• &nbsp; 对于较长的表单，可更简单快捷地扫描并标记所需选项<br>• &nbsp; 每次都点击下拉菜单去选择某个选项，会耗费很多时间</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/long-forms.png"><p><center><p style="font-size:12px; color:#C0C0C0">长表单──Survey Monkey Questionnaire</p><center></center></center></p><p>从上面例子可明显看出，所有可选项对用户可见的长表单提供了更好的用户体验。<br><br></p><h1 id="使用下拉菜单"><a href="#使用下拉菜单" class="headerlink" title="使用下拉菜单"></a>使用下拉菜单</h1><h3 id="1-当默认选项是推荐选项时"><a href="#1-当默认选项是推荐选项时" class="headerlink" title="#1 当默认选项是推荐选项时"></a>#1 当默认选项是推荐选项时</h3><p>这种情况下，仅查看推荐选项使用户更容易做出选择，因为：<br>• &nbsp; 显示所有选项将吸引用户的注意力<br>• &nbsp; 不鼓励用户更改默认选项</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/default-recommended-option.png"><p><center><p style="font-size:12px; color:#C0C0C0">默认推荐选项</p><center></center></center></p><p>在上面的例子中，用户基本不需要改变默认选项，所以没有必要显示所有的选项。</p><h3 id="2-当有大量相似的选项可选时"><a href="#2-当有大量相似的选项可选时" class="headerlink" title="#2 当有大量相似的选项可选时"></a>#2 当有大量相似的选项可选时</h3><p>当有大量相似选项时，推荐使用下拉菜单，因为：<br>• &nbsp; 用户很容易预知这些选项<br>• &nbsp; 用户没有必要并排查看所有选项</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/A-lot-of-familiar-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">大量相似选项</p><center></center></center></p><h3 id="3-当选项超过-7-个时"><a href="#3-当选项超过-7-个时" class="headerlink" title="#3 当选项超过 7 个时"></a>#3 当选项超过 7 个时</h3><p>当选项个数较多时，并不适合并排显示，因为：<br>• &nbsp; 如果一大堆选项并排放置，用户界面将变得杂乱。用户在查看时有可能会感到困惑。<br>• &nbsp; 扫描大量的单选选项需要耗费时间</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/More-than-7-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">超过 7 个选项</p><center></center></center></p><p>此外，对于长下拉列表，提供文本输入框是一个不错的方法。用户在其中输入选项名称后，列表仅显示出过滤选项。这将使选择更轻松快捷。</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/Enter-option-to-filter-the-list.png"><p><center><p style="font-size:12px; color:#C0C0C0">输入选项来过滤列表</p><center></center></center></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>为提高表单的用户体验，提供正确的控件以便用户输入是非常重要的。由于大量的选项会使表单变得很长，如果用户需要额外点击来输入信息的话，这将变得十分枯燥。<br>以上这些规则将帮助你决定在设计表单时使用哪个控件，单选按钮或者下拉菜单。</p><p><br></p><hr><p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>]]></content>
+    <content type="html"><![CDATA[<blockquote class="question"> 原文：<a href="https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1" target="_blank" rel="noopener">7 Rules of Using Radio Buttons vs Drop-Down Menus</a><br>作者：Saadia Minhas (2018-05-06)<br>阅读时长：3m43s </blockquote><p>不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。<a id="more"></a> </p><p>输入控件、输入校验、错误处理、用户反馈等等，都是可用表单中的一些项目。</p><p>单选按钮和下拉菜单是其中两个非常重要的输入控件。当用户需要输入时，它们可以互换使用。然而，如果我们仔细研究这两个控件的可用性，很明显，它们都有各自特定的使用场景，以便用户更简单地选择给定的输入。</p><p>以下是基于这个可用性研究的一些使用原则，它们将有助于你在设计表单时决定使用哪个控件更合适。<br><br></p><h1 id="使用单选按钮"><a href="#使用单选按钮" class="headerlink" title="使用单选按钮"></a>使用单选按钮</h1><h3 id="1-当需要强调选项时"><a href="#1-当需要强调选项时" class="headerlink" title="#1 当需要强调选项时"></a>#1 当需要强调选项时</h3><p>下面是一些需要强调选项的情况：<br>• &nbsp; 没有明确的默认选项或推荐选项<br>• &nbsp; 希望用户阅读所有选项<br>• &nbsp; 用户不熟悉这些选项，并且较少有机会甚至没有机会预知它们</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/when-options-need-to-be-emphasize.png"><p><center><p style="font-size:12px; color:#C0C0C0">当需要强调选项时</p><center></center></center></p><p>在上面这个例子中，使用下拉菜单并不是一个很好的方案，因为默认选项并没有提供关于其他选项的线索。</p><h3 id="2-当选项少于-5-个时"><a href="#2-当选项少于-5-个时" class="headerlink" title="#2 当选项少于 5 个时"></a>#2 当选项少于 5 个时</h3><p>选项较少时最好并排放置，以便：<br>• &nbsp; 用户可轻松快速的浏览所有选项<br>• &nbsp; 提供快速响应，而不是打开下拉菜单后再从多个选项中进行选择</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/less-number-of-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">选项较少时</p><center></center></center></p><p>如上面的例子所示，当用户需要从 2 至 4 个选项中进行选择时，使用单选按钮更合适。</p><h3 id="3-当选项之间需要进行明确的比较时"><a href="#3-当选项之间需要进行明确的比较时" class="headerlink" title="#3 当选项之间需要进行明确的比较时"></a>#3 当选项之间需要进行明确的比较时</h3><p>可比较的选项最好并排放置，因为：<br>• &nbsp; 用户可对所有选项一目了然，并轻松进行比较<br>• &nbsp; 从下拉菜单中比较和确定选项需要耗费时间<br>• &nbsp; 如果使用下拉菜单，那么用户每次需要检查已选项时，都必须再次打开下拉菜单对选项进行比较</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/comparison-of-options-is-required.png"><p><center><p style="font-size:12px; color:#C0C0C0">当需要比较选项时</p><center></center></center></p><p>上面这个比较好的例子是，关于用户必须做出严肃决定的订阅计划的选择。</p><h3 id="4-当需要优先考虑可见性和快速响应时"><a href="#4-当需要优先考虑可见性和快速响应时" class="headerlink" title="#4 当需要优先考虑可见性和快速响应时"></a>#4 当需要优先考虑可见性和快速响应时</h3><p>清晰的可见性及选项的可快速浏览对用户来说更容易理解。<br>• &nbsp; 对于较长的表单，可更简单快捷地扫描并标记所需选项<br>• &nbsp; 每次都点击下拉菜单去选择某个选项，会耗费很多时间</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/long-forms.png"><p><center><p style="font-size:12px; color:#C0C0C0">长表单──Survey Monkey Questionnaire</p><center></center></center></p><p>从上面例子可明显看出，所有可选项对用户可见的长表单提供了更好的用户体验。<br><br></p><h1 id="使用下拉菜单"><a href="#使用下拉菜单" class="headerlink" title="使用下拉菜单"></a>使用下拉菜单</h1><h3 id="1-当默认选项是推荐选项时"><a href="#1-当默认选项是推荐选项时" class="headerlink" title="#1 当默认选项是推荐选项时"></a>#1 当默认选项是推荐选项时</h3><p>这种情况下，仅查看推荐选项使用户更容易做出选择，因为：<br>• &nbsp; 显示所有选项将吸引用户的注意力<br>• &nbsp; 不鼓励用户更改默认选项</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/default-recommended-option.png"><p><center><p style="font-size:12px; color:#C0C0C0">默认推荐选项</p><center></center></center></p><p>在上面的例子中，用户基本不需要改变默认选项，所以没有必要显示所有的选项。</p><h3 id="2-当有大量相似的选项可选时"><a href="#2-当有大量相似的选项可选时" class="headerlink" title="#2 当有大量相似的选项可选时"></a>#2 当有大量相似的选项可选时</h3><p>当有大量相似选项时，推荐使用下拉菜单，因为：<br>• &nbsp; 用户很容易预知这些选项<br>• &nbsp; 用户没有必要并排查看所有选项</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/A-lot-of-familiar-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">大量相似选项</p><center></center></center></p><h3 id="3-当选项超过-7-个时"><a href="#3-当选项超过-7-个时" class="headerlink" title="#3 当选项超过 7 个时"></a>#3 当选项超过 7 个时</h3><p>当选项个数较多时，并不适合并排显示，因为：<br>• &nbsp; 如果一大堆选项并排放置，用户界面将变得杂乱。用户在查看时有可能会感到困惑。<br>• &nbsp; 扫描大量的单选选项需要耗费时间</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/More-than-7-options.png"><p><center><p style="font-size:12px; color:#C0C0C0">超过 7 个选项</p><center></center></center></p><p>此外，对于长下拉列表，提供文本输入框是一个不错的方法。用户在其中输入选项名称后，列表仅显示出过滤选项。这将使选择更轻松快捷。</p><img src="/2019/05/02/单选按钮与下拉菜单的-7-个使用原则/Enter-option-to-filter-the-list.png"><p><center><p style="font-size:12px; color:#C0C0C0">输入选项来过滤列表</p><center></center></center></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>为提高表单的用户体验，提供正确的控件以便用户输入是非常重要的。由于大量的选项会使表单变得很长，如果用户需要额外点击来输入信息的话，这将变得十分枯燥。<br>以上这些规则将帮助你决定在设计表单时使用哪个控件，单选按钮或者下拉菜单。<br><br></p><hr><p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>]]></content>
     
     <summary type="html">
     
       &lt;blockquote class=&quot;question&quot;&gt; 原文：&lt;a href=&quot;https://blog.prototypr.io/7-rules-of-using-radio-buttons-vs-drop-down-menus-fddf50d312d1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;7 Rules of Using Radio Buttons vs Drop-Down Menus&lt;/a&gt;&lt;br&gt;作者：Saadia Minhas (2018-05-06)&lt;br&gt;阅读时长：3m43s &lt;/blockquote&gt;
 
 &lt;p&gt;不管你正在使用移动应用还是基于网页的工具，表单都是用户界面中至关重要的一部分。同时，表单也是用户交互的最佳来源。用户通过表单录入、提供信息，系统则通过理解这些信息来满足用户需求。&lt;/p&gt;
-&lt;p&gt;输入控件、输入校验、错误处理、用户反馈等等，都是可用表单中的一些项目。&lt;/p&gt;
-&lt;p&gt;单选按钮和下拉菜单是其中两个非常重要的输入控件。当用户需要输入时，它们可以互换使用。然而，如果我们仔细研究这两个控件的可用性，很明显，它们都有各自特定的使用场景，以便用户更简单地选择给定的输入。&lt;/p&gt;
     
     </summary>
     
@@ -91,18 +113,39 @@
   </entry>
   
   <entry>
+    <title>二零一九年五月</title>
+    <link href="http://zyunn.com/2019/05/01/%E4%BA%8C%E9%9B%B6%E4%B8%80%E4%B9%9D%E5%B9%B4%E4%BA%94%E6%9C%88/"/>
+    <id>http://zyunn.com/2019/05/01/二零一九年五月/</id>
+    <published>2019-05-01T09:17:57.000Z</published>
+    <updated>2019-05-02T10:30:14.851Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2019-05-01"><a href="#2019-05-01" class="headerlink" title="# 2019.05.01"></a># 2019.05.01</h3><hr><p>今天是 2019 年 5 月 1 号，我们的社会依然面临三大严峻问题。<br>治疗胃溃疡的药，不良反应是，胃炎。<br>抗过敏的药，注意事项是，过敏体质者慎用。<br>缓解抑郁症的药，有增加自杀倾向的风险。<br><a id="more"></a><br><br></p><h3 id="2019-05-02"><a href="#2019-05-02" class="headerlink" title="# 2019.05.02"></a># 2019.05.02</h3><hr><p>今天是 2019 年 5 月 2 号，从朋友圈看当代中国青年的精神境况和生活状态。<br>世界杯。<br>创造 101。<br>权力的游戏。<br>热情一年不如一年。</p><p><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;2019-05-01&quot;&gt;&lt;a href=&quot;#2019-05-01&quot; class=&quot;headerlink&quot; title=&quot;# 2019.05.01&quot;&gt;&lt;/a&gt;# 2019.05.01&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;今天是 2019 年 5 月 1 号，我们的社会依然面临三大严峻问题。&lt;br&gt;治疗胃溃疡的药，不良反应是，胃炎。&lt;br&gt;抗过敏的药，注意事项是，过敏体质者慎用。&lt;br&gt;缓解抑郁症的药，有增加自杀倾向的风险。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="碎碎念儿" scheme="http://zyunn.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%84%BF/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>历经九九八万五千六百七十一难，迎来互联网生涯新高！</title>
     <link href="http://zyunn.com/2019/04/21/%E5%8E%86%E7%BB%8F%E4%B9%9D%E4%B9%9D%E5%85%AB%E4%B8%87%E4%BA%94%E5%8D%83%E5%85%AD%E7%99%BE%E4%B8%83%E5%8D%81%E4%B8%80%E9%9A%BE%EF%BC%8C%E8%BF%8E%E6%9D%A5%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B6%AF%E6%96%B0%E9%AB%98%EF%BC%81/"/>
     <id>http://zyunn.com/2019/04/21/历经九九八万五千六百七十一难，迎来互联网生涯新高！/</id>
     <published>2019-04-21T10:18:18.000Z</published>
-    <updated>2019-05-02T03:45:50.976Z</updated>
+    <updated>2019-05-02T09:40:26.397Z</updated>
     
-    <content type="html"><![CDATA[<p>折腾了两天之后，我终于拥有自己的部落格啦！哈哈哈哈哈哈开心！快乐！满足！充满希望！（止不住的膨胀 </p><p>谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。在稀里糊涂地安装了 Git、Node.js、Xcode，新建了 repository，弄完了域名注册实名验证域名解析，各种注册各种设置，各种改样式，各种 hexo c、 hexo g、hexo s、hexo d，各种 error 各种 warning 之后，我终于迎来了自己的个人网站。<a id="more"></a> 辛苦我自己了（高光时刻儿 。</p><p>虽然还很简单，但暂时还够用儿，其他的边用边学就好啦。还是要好好学习，好好写文章呐。</p><p>感恩 Hexo，感恩 GitHub，感恩互联网，感恩所有分享经验和想法的人儿吖（扑通一声跪下（感恩「简书」不让我改昵称改头像让我有了建站的小动机儿 。</p><p>Cowabunga！</p><img src="/2019/04/21/历经九九八万五千六百七十一难，迎来互联网生涯新高！/cowabunga.jpeg"><p style="font-size:12px; color:#C0C0C0">图片来源：动画《探险活宝》</p>  ]]></content>
+    <content type="html"><![CDATA[<p>折腾了两天之后，我终于拥有自己的部落格啦！哈哈哈哈哈哈开心！快乐！满足！充满希望！（止不住的膨胀 </p><p>谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。<a id="more"></a>在稀里糊涂地安装了 Git、Node.js、Xcode，新建了 repository，弄完了域名注册实名验证域名解析，各种注册各种设置，各种改样式，各种 hexo c、 hexo g、hexo s、hexo d，各种 error 各种 warning 之后，我终于迎来了自己的个人网站。 辛苦我自己了（高光时刻儿 。</p><p>虽然还很简单，但暂时还够用儿，其他的边用边学就好啦。还是要好好学习，好好写文章呐。</p><p>感恩 Hexo，感恩 GitHub，感恩互联网，感恩所有分享经验和想法的人儿吖（扑通一声跪下（感恩「简书」不让我改昵称改头像让我有了建站的小动机儿 。</p><p>Cowabunga！</p><img src="/2019/04/21/历经九九八万五千六百七十一难，迎来互联网生涯新高！/cowabunga.jpeg"><p style="font-size:12px; color:#C0C0C0">图片来源：动画《探险活宝》</p>  ]]></content>
     
     <summary type="html">
     
       &lt;p&gt;折腾了两天之后，我终于拥有自己的部落格啦！哈哈哈哈哈哈开心！快乐！满足！充满希望！（止不住的膨胀 &lt;/p&gt;
-&lt;p&gt;谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。在稀里糊涂地安装了 Git、Node.js、Xcode，新建了 repository，弄完了域名注册实名验证域名解析，各种注册各种设置，各种改样式，各种 hexo c、 hexo g、hexo s、hexo d，各种 error 各种 warning 之后，我终于迎来了自己的个人网站。&lt;/p&gt;
+&lt;p&gt;谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。&lt;/p&gt;
     
     </summary>
     
