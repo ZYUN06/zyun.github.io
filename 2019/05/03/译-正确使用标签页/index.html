@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<script>
+    (function(){
+        if(''){
+            if (prompt('叮咚～这篇文章只是我自个儿的碎碎念儿，不看也可以吖。实在非得看，也可以在下面输入密码 201905 哟。') !== ''){
+                alert('我也不知道它为啥要再弹一次，要不再点一次「确定」吧～点完就会回到原来的页面啦～今天也要开心哟 ^^');
+                history.back();
+            }
+        }
+    })();
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="译文,交互设计,Web,NN/g,导航,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZYUN" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="原文：Tabs, Used Right作者：Jakob Nielsen (2016-07-09)阅读时长：6m30s   摘要：遵循以下 12 个选项卡控件的设计指南，以区分选项卡和网站导航，并解决点击不确定性问题。">
+<meta name="keywords" content="译文,交互设计,Web,NN&#x2F;g,导航">
+<meta property="og:type" content="article">
+<meta property="og:title" content="译 | 正确使用标签页">
+<meta property="og:url" content="http://zyunn.com/2019/05/03/译-正确使用标签页/index.html">
+<meta property="og:site_name" content="ZYUN">
+<meta property="og:description" content="原文：Tabs, Used Right作者：Jakob Nielsen (2016-07-09)阅读时长：6m30s   摘要：遵循以下 12 个选项卡控件的设计指南，以区分选项卡和网站导航，并解决点击不确定性问题。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zyunn.com/2019/05/03/译-正确使用标签页/01-workday-tabs.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/03/译-正确使用标签页/02-ticketmaster.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/03/译-正确使用标签页/03-travelers.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/03/译-正确使用标签页/04-reuters-2.png">
+<meta property="og:updated_time" content="2019-05-03T09:54:01.350Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="译 | 正确使用标签页">
+<meta name="twitter:description" content="原文：Tabs, Used Right作者：Jakob Nielsen (2016-07-09)阅读时长：6m30s   摘要：遵循以下 12 个选项卡控件的设计指南，以区分选项卡和网站导航，并解决点击不确定性问题。">
+<meta name="twitter:image" content="http://zyunn.com/2019/05/03/译-正确使用标签页/01-workday-tabs.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zyunn.com/2019/05/03/译-正确使用标签页/">
+
+
+
+
+
+  <title>译 | 正确使用标签页 | ZYUN</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="site-title">ZYUN</span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zyunn.com/2019/05/03/译-正确使用标签页/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZYUN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZYUN">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">译 | 正确使用标签页</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-03T16:29:15+08:00">
+                2019-05-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/译文/" itemprop="url" rel="index">
+                    <span itemprop="name">译文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="question"> 原文：<a href="https://www.nngroup.com/articles/tabs-used-right/" target="_blank" rel="noopener">Tabs, Used Right</a><br>作者：<a href="https://www.nngroup.com/articles/author/jakob-nielsen/" target="_blank" rel="noopener">Jakob Nielsen</a> (2016-07-09)<br>阅读时长：6m30s </blockquote>
+
+<p>摘要：遵循以下 12 个选项卡控件的设计指南，以区分选项卡和网站导航，并解决点击不确定性问题。<a id="more"></a></p>
+<p>简单的 GUI 窗口小部件是网页中大多数功能的基本构件，但却很难找到正确使用所有对话控件的网站。即使是像<a href="https://www.nngroup.com/articles/checkboxes-vs-radio-buttons" target="_blank" rel="noopener">单选按钮和复选框</a>（右键在新标签页打开<a href="http://zyunn.com/2019/05/02/%E5%A4%8D%E9%80%89%E6%A1%86%E4%B8%8E%E5%8D%95%E9%80%89%E6%8C%89%E9%92%AE%E7%9A%84-12-%E4%B8%AA%E5%8F%AF%E7%94%A8%E6%80%A7%E9%97%AE%E9%A2%98/">译文</a>）这样简单的东西，也有一半的时间是被错误使用的。甚至我们都还没开始讲<a href="https://www.nngroup.com/articles/drop-down-menus/" target="_blank" rel="noopener">下拉菜单</a>，这也是可怕的滥用。本文讨论的是另一个经常被滥用的设计元素：选项卡。<br>（这里，我讨论的是页面内的选项卡，如下面的几个截屏示例所示。这些是你可以自己设计的选项卡，作为你的网站或基于 web 的应用程序的一部分。另一种不同类型的选项卡被用于<a href="https://www.nngroup.com/articles/browser-and-gui-chrome/" target="_blank" rel="noopener">浏览器框架</a>，它允许用户在浏览器中<a href="https://www.nngroup.com/articles/multi-tab-page-parking/" target="_blank" rel="noopener">同时打开多个页面</a>。在本文中，我不讨论浏览器选项卡。）<br><br></p>
+<h1 id="选项卡可用性指南"><a href="#选项卡可用性指南" class="headerlink" title="选项卡可用性指南"></a>选项卡可用性指南</h1><p>下面是使用选项卡的 12 个设计原则：</p>
+<ol>
+<li><p><strong>使用选项卡在同一上下文的视图之间切换</strong>，而不是导航到不同的区域。这是最重要的一点，因为在切换视图时保持原位不变是我们使用选项卡的首要原因。</p>
+</li>
+<li><p><strong>按一定的逻辑将内容分到不同的选项卡下</strong>，这样，用户便能轻松预测到选择一个给定的选项卡后会看到什么内容。（<a href="https://www.nngroup.com/articles/card-sorting-how-many-users-to-test/" target="_blank" rel="noopener">卡片分类法</a>是研究这种「<a href="https://www.nngroup.com/articles/mini-ia-structuring-information/" target="_blank" rel="noopener">mini-IA</a>」问题的一种方法。如果你无法找到明确不同的分组，那么选项卡可能是管理你的内容的错误界面控件。）</p>
+</li>
+<li><p>当用户<strong>不需要同时查看多个选项卡中的内容</strong>时，才使用选项卡。如果用户确实需要比较不同选项卡下面的信息，那么不得不来回切换将会增加他们的<a href="https://www.nngroup.com/articles/short-term-memory-and-web-usability/" target="_blank" rel="noopener">短期记忆</a>负担，增加<a href="https://www.nngroup.com/articles/minimize-cognitive-load/" target="_blank" rel="noopener">认知负担</a>和<a href="https://www.nngroup.com/articles/interaction-cost-definition/" target="_blank" rel="noopener">交互成本</a>，并降低可用性，相比于把所有内容都放在一个大页面中的设计。</p>
+</li>
+<li><p>设计<strong>本质上平行</strong>的选项卡。如果选项卡明显不同，用户会将它们理解为网站导航。</p>
+</li>
+</ol>
+<img src="/2019/05/03/译-正确使用标签页/01-workday-tabs.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Workday 的主页使用了选项卡控件来呈现它的服务和应用。第一个选项卡 About Workday 提供了公司的概况，而其他的选项卡描述了公司提供的服务。最好是移除 About Workday 这个选项卡，以保持选项卡的平行。</p><center></center></center></p>
+<ol start="5">
+<li>高亮显示当前选中的选项卡。确保高亮显示足够突出，以便人们可以辨别出哪个选项卡是选中的。</li>
+</ol>
+<img src="/2019/05/03/译-正确使用标签页/02-ticketmaster.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Ticketmaster 的选项卡控件通过去掉填充颜色来突出显示当前选中的选项卡（Just Announced），如果有至少 3 个选项卡，则可以使用这个方法。但如果只有 2 个选项卡，这将很难判断出哪个是选中的。</p><center></center></center></p>
+<p>除了高亮显示，你还可以通过尺寸，加粗文字，加上图标或者使它显示在其他选项卡前方等方法来标记当前选中的选项卡。如上述例子所示，如果只有 2 个选项卡，那么这种附加的信号将非常重要。</p>
+<ol start="6">
+<li><p><strong>未选中的选项卡应该清晰可见、可读</strong>，以提醒用户有其他的选项。如果非高亮显示的选项卡太融入于背景，那么用户可能永远都不会点击它们，也永远都不会发现那些隐藏的功能。</p>
+</li>
+<li><p><strong>将当前选中的选项卡与它的内容区域联系起来</strong>，就好像您正在使用几个粘贴有选项卡的物理索引卡一样。这将强调当前正显示哪个面板，并在只有 2 个选项卡的时候，告诉用户哪个选项卡是被选中的。</p>
+</li>
+</ol>
+<img src="/2019/05/03/译-正确使用标签页/03-travelers.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Traveler 的选项卡控件中，选中的选项卡和面板区域使用了相同的颜色。这个设计加强了选项卡及其相关内容之间的联系，这也是支持使用反向高亮显示的原因之一。</p><center></center></center></p>
+<ol start="8">
+<li><p><strong>编写简短的选项卡标签</strong>，并使用<a href="https://www.nngroup.com/articles/web-writing-use-search-keywords/" target="_blank" rel="noopener">简单明了的语言</a>，而不是自创的术语。选项卡标签通常为 1~2 个字。短标签更易于扫描；如果你需要更长的标签，则表明这些选项对于一个选项卡控件来说过于复杂了。</p>
+</li>
+<li><p>选项卡标签<strong>不要使用全部大写</strong>。因为更难阅读，所以全部大写基本不会是一个好方法。可读性对于单个、简短的单词来说并不重要，但，正如「<a href="https://www.nngroup.com/articles/113-design-guidelines-homepage-usability/" target="_blank" rel="noopener">主页可用性设计指南</a>」中提到的，你应该选择一种大写的形式（无论是句型还是标题式大写），并坚持使用。</p>
+</li>
+<li><p>只使用<strong>一行</strong>选项卡。多行会造成 UI 元素的跳跃，破坏空间记忆，从而造成<a href="https://www.nngroup.com/articles/recognition-and-recall/" target="_blank" rel="noopener">用户无法记住</a>他们已访问过哪些选项卡。此外，多行也是过度复杂的一个症状；如果你需要超出一行的选项卡，那么你应该简化你的设计。</p>
+</li>
+<li><p>将一整行选项卡放置在选项卡面板的<strong>顶部</strong>，而不是旁边或者底部，否则用户会忽略它们。<br>从视觉设计上看，选项卡控制的<strong>范围</strong>应该是显而易见的。打个比方，使用选项卡就像在一个老式卡片目录的抽屉里翻阅索引卡一样，因此用户必须能够一眼就看出是什么构成了一个「索引卡」（即选项卡面板）。</p>
+</li>
+</ol>
+<img src="/2019/05/03/译-正确使用标签页/04-reuters-2.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Reuter 主页上的市场部分，使用了边框来显示选项卡控制的范围。</p><center></center></center></p>
+<ol start="12">
+<li>选项卡的<strong>外观和作用应该总是一致的</strong>。一致性在 GUI 控件设计中很重要，因为它通过以下几种方式构建起用户对界面的掌控感：</li>
+</ol>
+<ul>
+<li>可识别性。当一件东西看起来总是一样的时候，你就知道应该寻找什么，并且知道当你找到它时会看到什么。</li>
+<li>可预测性。当一件东西总是以相同的方式运作时，你就可以知道当你触发它时会发生什么。</li>
+<li>赋予权力。当你可以依赖于你过去对所有可用功能的了解时，你就可以轻松地进行一系列操作来实现你的目标。</li>
+<li>效率。没有必要花费时间去学习新的东西或者担心特性不一致带来的影响。<br><br></li>
+</ul>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>在图形用户界面设计中，选项卡可能看起来是一个不起眼、无聊的控件。但是，如本文所示，在创建运行良好、易于使用、增强用户体验的选项卡时，存在许多特定的设计上的问题。</p>
+<p>当使用分析技术<a href="https://www.nngroup.com/courses/analytics-and-user-experience/" target="_blank" rel="noopener">对一个 UX 运行状况进行检查</a>时，选项卡的设计问题是一个常见的调查结果。假设你正在对页面内的操作进行跟踪，你可能会发现，用户很少使用某些页面上的选项卡。检查你是否违反了本文中的任何一条设计准则。如果是的话，你很可能就是罪魁祸首，并且你可通过快速的 <a href="https://www.nngroup.com/articles/putting-ab-testing-in-its-place/" target="_blank" rel="noopener">A/B 测试</a>变成英雄，这个测试通常会显示重设计的选项卡的两次使用，以使其符合标准。</p>
+<p>如果你遵循了本文中的设计准则，用户将知道如何使用你的选项卡，而无需进一步探索或进行易错的猜测。这也意味着他们可以将所有的时间和精力用于理解你在这些选项卡下提供的内容和功能。选项卡本身没有任何价值，但当它们不是吸引注意力而是促进用户对内容的访问时，它们将发挥重要的作用（在满足用户体验和业务目标方面）。<br><br></p>
+<hr>
+<p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/译文/" rel="tag"># 译文</a>
+          
+            <a href="/tags/交互设计/" rel="tag"># 交互设计</a>
+          
+            <a href="/tags/Web/" rel="tag"># Web</a>
+          
+            <a href="/tags/NN-g/" rel="tag"># NN/g</a>
+          
+            <a href="/tags/导航/" rel="tag"># 导航</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/03/译-网站上的面包屑导航：什么、何时与如何/" rel="next" title="译 | 网站上的面包屑导航：什么、何时与如何">
+                <i class="fa fa-chevron-left"></i> 译 | 网站上的面包屑导航：什么、何时与如何
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/03/译-界面设计中的「变化盲视」/" rel="prev" title="译 | 界面设计中的「变化盲视」">
+                译 | 界面设计中的「变化盲视」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright"><span class="author" itemprop="copyrightHolder">ZYUN</span>
+&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  
+  
+
+  
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://  hexo.io">Hexo</a> </div>
+
+
+
+
+
+
+
+</span></div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
