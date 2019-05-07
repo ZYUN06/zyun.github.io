@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyunn.com/"/>
-  <updated>2019-05-07T12:23:48.211Z</updated>
+  <updated>2019-05-07T12:45:29.433Z</updated>
   <id>http://zyunn.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>译 | 命令链接</title>
+    <link href="http://zyunn.com/2019/05/07/%E8%AF%91-%E5%91%BD%E4%BB%A4%E9%93%BE%E6%8E%A5/"/>
+    <id>http://zyunn.com/2019/05/07/译-命令链接/</id>
+    <published>2019-05-07T12:29:07.000Z</published>
+    <updated>2019-05-07T12:45:29.433Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="question"> 原文：<a href="https://www.nngroup.com/articles/command-links/" target="_blank" rel="noopener">Command Links</a><br>作者：<a href="https://www.nngroup.com/articles/author/jakob-nielsen/" target="_blank" rel="noopener">Jakob Nielsen</a> (2007-05-14)<br>阅读时长：5m33s </blockquote><p>摘要：应用中的命令可以以按钮或者链接的形式呈现，这为解释提供了更多的空间。然而，对于主要命令来说，按钮仍然是最好的选择。<a id="more"></a></p><p>在较简单的时代，<a href="https://www.nngroup.com/courses/web-page-design/" target="_blank" rel="noopener">网站</a>和<a href="https://www.nngroup.com/courses/topic/applications/" target="_blank" rel="noopener">应用程序</a>分别有着两套明显不同的设计指南。例如，在呈现用户的选择时有不同的规则：<br>• &nbsp;<strong>网站通过链接（<a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/" target="_blank" rel="noopener">带下划线的彩色文本</a>）提供导航</strong><br>• &nbsp;<strong>应用通过菜单和按钮提供操作</strong></p><p>网站和应用程序的设计指南是不同（并将继续保持不同）的，因为有一个可用性的基础原则是：良好的设计是基于（a）用户和（b）他们的任务的。在后一个方面（用户的任务），网站和应用程序存在着根本差异：<br>• &nbsp;<strong>网站：用户的主要任务是，在一个信息空间中移动，并阅读其内容</strong><br>• &nbsp;<strong>应用程序：用户的主要任务是，通过执行命令来改变一些数据集的状态</strong></p><p>事实上，<strong>应用程序的定义就是，它的功能会影响其自身用户界面之外的一些东西</strong>。使用应用程序会令某些东西发生变化，因为用户要求更改它。相比之下，一个网站不会因为被使用而改变；页面总是保持相同。（尽管信息可能会改变，但网站页面在概念上是静态的。）例如，一个包含明天天气预报的页面总是包含这些信息，即使一天显示了阴雨天气的图标，而另一天显示了阳光的图标。<br><br></p><h1 id="应用程序和网站之间的界限变得模糊"><a href="#应用程序和网站之间的界限变得模糊" class="headerlink" title="应用程序和网站之间的界限变得模糊"></a>应用程序和网站之间的界限变得模糊</h1><p>在过去的十年里，网站和应用程序之间的明确区别已经变得模糊了。</p><p>首先，在<strong>语义层面</strong>上，网站提供了越来越多的功能。最被广泛使用的功能是「添加至购物车」，并且在电商可用性指南中，总是以按钮的形式显示此功能，即使是在网站上使用它。<br>因此，对于类似应用程序的网站组件（那些代表功能和命令，而不是普通信息的组件），您应该遵循应用程序的可用性指南（与「添加至购物车」功能一样）。</p><p>第二个问题更难处理：在<strong>语法层面</strong>上，按钮和链接的区别已经变得模糊，因为<strong>有一些命令也被显示为链接</strong>。<br>幸运的是，我们至少有一个明确的规则：<strong>不要使用按钮来导航</strong>。用户应当点击一个普通链接以移动至另一个信息页面。</p><p>然而，即使是这条规则，也有例外：购物车中的「继续购物」和「继续付款」选项传统上是显示为按钮的，尽管它们是纯粹的导航。当用户点击这两个选项中的某一个时，并没有改变任何东西，而只是移动到另一个页面，这个页面中有他们需要使用的命令。但是因为付款是工作流程中的一部分，因此它可以从普通的链接导航规则中得到豁免。</p><p>但，主要的规则是，<strong>用户在页面之间移动时需使用链接</strong>。除其他众多好处之外，普通链接还允许用户在新标签页或新窗口中打开一个新页面，如果他们希望的话。并且，您还可以<a href="https://www.nngroup.com/articles/change-the-color-of-visited-links" target="_blank" rel="noopener">使用不同的颜色来显示链接文本</a>，这取决于用户此前是否访问过这个目标。<br><br></p><h1 id="命令链接设计指南"><a href="#命令链接设计指南" class="headerlink" title="命令链接设计指南"></a>命令链接设计指南</h1><p>Windows Vista 引入了一个新的 GUI 命令小部件：<strong>命令链接</strong>。一旦人们每天都使用系统中的某些东西，它就成了事实上的标准。因为他们会经常在 Vista 中遇到它们，所以用户将逐渐<strong>了解并使用命令链接</strong>。</p><p>许多网站已经使用命令链接。不过，尽管用户越来越意识到链接可以激活命令，但仍然存在令用户感到困惑的风险，因为大多数链接都是用于导航的。</p><p>为减少困惑，<strong>链接文本应当明确说明它导致的是一个动作，而不仅仅是一个新页面</strong>。仅在周围的文本中传达这个信息是不够的；用户经常<a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" target="_blank" rel="noopener">扫描网页</a>，以寻找他们可以操作的区域。因为，您应该假设大部分用户只会阅读链接文本。事实上，用户通常只阅读链接文本中的前几个单词，所以，<strong>以一个能够表明点击链接时会导致的操作的单词（通常是动词）开头</strong>是很重要的。</p><p>至于<strong>大写规则</strong>，请参考您的企业风格指南中的常规链接指南。如果没有风格指南，请使用句式大写（即，仅将命令名称中第一个单词的第一个字母大写）。如果是环绕在句子中的直接链接，则例外。但是，通常最好避免在正文中使用命令；直接链接应仅限于导航。</p><p><strong>命令链接的使用限于</strong>：<br>• &nbsp;<strong>具有轻微后果的操作</strong>。因为用户可能会点击一个看起来像链接的东西，期望它所做的只是打开一个新页面。例如，在经纪业务应用程序中，继续使用按钮来执行「购买此股票」的命令。<br>• &nbsp;<strong>次要命令</strong>。因为用户在寻找“严肃的”的命令或主命令时，会扫描屏幕以找到一个按钮。因此，您应当以按钮的形式显示最重要的命令──不论是从用户的角度还是从您自己的角度。例如，继续使用「添加至购物车」按钮。</p><p>尽管存在这些限制，但命令链接还是有其优点，因为它们带来了一些好处。最值得注意的是，使用链接，您<strong>可以编写更长的命令名称，从而使其更具描述性</strong>。而按钮标签则必须简短（4 个字或更少），否则按钮看起来就会很奇怪。当然，由于用户不喜欢阅读，您应当尽可能保持命令描述简短。</p><p>Vista 展示了命令链接的另一个好处：<strong>能够在主链接文本下方增加说明文字</strong>。您可以用较小的字体来展示这个说明，以强调它的次要性（这样有经验的用户就不会浪费时间去阅读它）。因为按钮是封闭，因此它是独立的，我们很难在一个命令按钮旁边添加解释。并且，如果您这么做，用户很可能会忽略它。</p><p>现在是时候将您的一些命令显示为链接了。但是不要过度使用。<br><br></p><hr><p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;question&quot;&gt; 原文：&lt;a href=&quot;https://www.nngroup.com/articles/command-links/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Command Links&lt;/a&gt;&lt;br&gt;作者：&lt;a href=&quot;https://www.nngroup.com/articles/author/jakob-nielsen/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Jakob Nielsen&lt;/a&gt; (2007-05-14)&lt;br&gt;阅读时长：5m33s &lt;/blockquote&gt;
+
+&lt;p&gt;摘要：应用中的命令可以以按钮或者链接的形式呈现，这为解释提供了更多的空间。然而，对于主要命令来说，按钮仍然是最好的选择。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="译文" scheme="http://zyunn.com/categories/%E8%AF%91%E6%96%87/"/>
+    
+    
+      <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
+    
+      <category term="交互设计" scheme="http://zyunn.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
+    
+  </entry>
+  
+  <entry>
     <title>译 | 应用中的应用：从微信小程序中学到的用户体验</title>
     <link href="http://zyunn.com/2019/05/03/%E8%AF%91-%E5%BA%94%E7%94%A8%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%9A%E4%BB%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%AD%A6%E5%88%B0%E7%9A%84%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
     <id>http://zyunn.com/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/</id>
     <published>2019-05-03T10:03:47.000Z</published>
-    <updated>2019-05-07T12:23:48.211Z</updated>
+    <updated>2019-05-07T12:28:31.486Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="question"> 原文：<a href="https://www.nngroup.com/articles/wechat-mini-programs/" target="_blank" rel="noopener">Apps Within Apps: UX Lessons from WeChat Mini Programs</a><br>作者：<a href="https://www.nngroup.com/articles/author/feifei-liu/" target="_blank" rel="noopener">Feifei Liu (刘菲菲)</a> (2018-09-09)<br>阅读时长：12m28s </blockquote><p>摘要：我们在中国的用户研究发现，嵌入式应用的设计者不得不考虑使用环境、父平台的核心功能以及该程序的使用方式。<a id="more"></a></p><p>截止 2018 年 3 月，作为中国最受欢迎的社交应用，微信的每月活跃用户数已达 10 亿。<a href="https://www.nngroup.com/articles/wechat-integrated-ux/" target="_blank" rel="noopener">微信的综合服务</a>涵盖了中国用户日常生活的方方面面，包括社交、购物、账单支付、新闻以及预定服务。2017 年底的产品更新中新增了一个新的主要功能：微信小程序（包括小游戏）。小程序和应用相似，但它们是在微信中构建的：感觉就像是一个更大的应用中的应用。因此，一个中国公司可通过 4 个不同的渠道与移动设备上的用户进行交互：</p><ul><li>移动网站</li><li>原生应用</li><li>该公司的微信官方账号</li><li>微信小程序（本研究的主要焦点）<br><br></li></ul><p>我们想了解人们如何看待这些不同渠道之间的差异，以及是否存在某些任务更适合其中某一个渠道而不是另一个。为了找出答案，我们在北京与 10 位微信用户进行了可用性测试研究。</p><p>即使你不打算设计一个微信小程序，这类可扩展的用户界面的用户体验也是很有趣的。传统上，网站和软件应用是封闭的包，无法由用户或第三方提供者进行扩展。相比之下，微信小程序是一种不同体验架构，与以下产品相关：</p><ul><li>用于广泛的软件包的外接程序，例如，浏览器工具栏和电子表格工具包（例如，可为执行 ANOVAs 的少数用户添加至 Excel，而不会使大量群体混淆的统计分析功能）</li><li>Facebook Messenger App，支持应用中 Gamesand Discover 的第三方游戏、新闻和购物服务</li><li>SaaS（Software as a Service）公司提供的整合应用程序 （例如，通过整合功能页面，Slack 用户可直接在 Slack 应用中链接到 Google Calendar 的事件或者 Trello 卡片）</li></ul><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p1_messenger_slack_3rdpartyservice_copy_2.png"><p><center><p style="font-size:12px; color:#C0C0C0">在美国的两个「应用中的应用」的例子，Facebook Messenger（左边）在应用中包含了游戏，和 Slack（右边）支持可直接链接到他们的应用或者网站的第三方服务。</p><center><br></center></center></p><h1 id="微信小程序的介绍"><a href="#微信小程序的介绍" class="headerlink" title="微信小程序的介绍"></a>微信小程序的介绍</h1><p>对于那些不熟悉小程序的人来说，下面的这些例子将介绍它们是什么以及它们如何工作。</p><p>• &nbsp;<strong>小程序是在微信平台中构建的移动应用程序</strong>。包括游戏、食物配送、购物、门票销售、家庭服务、图片编辑，等等。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p2_wechatminiprogramexamples-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">两个小程序：食物配送小程序「饿了么」（左边），旅行预订小程序「携程旅行」（右边）（为了清晰起见，我们在屏幕截图上叠加了一些英文翻译）。</p><center></center></center></p><p>• &nbsp;<strong>用户无需安装（或者卸载）一个小程序</strong>。在我们的研究中，许多用户都提到了这个功能，并认为这有助于节省手机存储空间。</p><p>• &nbsp;<strong>小程序的发现渠道主要是线上的社交分享和线下的<a href="https://www.nngroup.com/articles/wechat-qr-shake/" target="_blank" rel="noopener">二维码扫描</a></strong>。许多小程序鼓励用户向其他用户分享游戏，以便在游戏中获得奖励（比如，额外的生命值或者奖励点）。线下，带有二维码的广告可对小程序进行推广。例如，一家购物中心为一个预付停车费的小程序做了广告。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p3_miniprogram_parkingfee_copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">万达广场（购物中心）为一个小程序做的广告，以帮助用户预防停车费。</p><center></center></center></p><p>• &nbsp;<strong>小程序可通过微信主页进行访问，但默认是隐藏的</strong>。因为微信的主要功能是聊天，主页专用于最近的聊天对话。要查看小程序的话，用户需要从顶部向下滑；通过这个操作可以显示最近使用的小程序列表。尽管对于常用的小程序用户来说，滑动既简单又方便，但新用户或者不常用的用户则不太可能自己发现小程序，除非他们不小心向下滑动或者其他用户向他们分享了一个小程序。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p4_wechatminiprogramentrance-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">在微信主页（左边），用户可向下滑动以查看最近使用的小程序列表（右边）。</p><center></center></center></p><p>我们的研究提供了一些设计师在应用中，或者其他类似于微信的集成模型的有限平台场景中开发应用时可运用的见解。<br><br></p><h1 id="从微信小程序中学到的关于用户体验的-5-个经验"><a href="#从微信小程序中学到的关于用户体验的-5-个经验" class="headerlink" title="从微信小程序中学到的关于用户体验的 5 个经验"></a>从微信小程序中学到的关于用户体验的 5 个经验</h1><h3 id="1-保持用户期望的核心功能和内容。"><a href="#1-保持用户期望的核心功能和内容。" class="headerlink" title="1. 保持用户期望的核心功能和内容。"></a>1. 保持用户期望的核心功能和内容。</h3><p>已经使用过你的公司的（完整的） app 的用户对你所提供的内容和服务有了心理模型和期望。如果一个应用的小程序版本让用户很难找到他们想要的核心内容，他们将会使用他们更熟悉的 app。<br>在我们的测试中，一位 36 岁的女性用户抱怨说，京东购物小程序的主页不如京东移动 app 中提供的信息丰富：“在移动 app 的主页上，我可以浏览打折信息（她在顶部的轮播图之间滑动）。它还显示了我浏览过和购买过的东西，并且推荐了更多相似的商品。所有这些信息都不会在小程序中显示。”她认为小程序中的内容更少，所以她不想在上面购物。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p5_jdminiprogramandcompanyapp-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">京东购物小程序（左边）和京东移动 app（右边）的对比表明了，移动 app 中可浏览的内容更多，包括轮播图、促销信息和更多模块。</p><center></center></center></p><p>另外一名用户，一位 24 岁的女性，在使用提供食物配送服务的美团小程序时也有类似的问题。“当我打开 app 时，我要做的的第一件事就是获得一些优惠券。这个应用会在你每次登录时自动显示一些优惠券，我不知道小程序是否也会这么做。”她打开小程序，然后非常失望，“没有，没有任何优惠券。这些都太贵了。而且，轮播图中展示的促销活动也不像公司 app 中那么多。”</p><p>如果一个小程序无法做到移动应用中能做到的一切，那么它应该支持切换──这是用户在小程序和移动 app 或网站之间移动以便查看完整内容的一个方便途径。</p><h3 id="2-始终考虑使用环境。在移动设备上，支持快速操作，并且为中断而设计。"><a href="#2-始终考虑使用环境。在移动设备上，支持快速操作，并且为中断而设计。" class="headerlink" title="2. 始终考虑使用环境。在移动设备上，支持快速操作，并且为中断而设计。"></a>2. 始终考虑使用环境。在移动设备上，支持快速操作，并且为中断而设计。</h3><p>在我们的研究中，很多人抱怨说，如果他们在使用小程序的过程中收到了微信消息，他们无法方便地查看信息，然后再回到小程序中继续他们的任务。相反地，他们不得不退出小程序以查看消息。</p><p>不幸的是，一些小程序未保存用户的进度，而是强制他们再次重新开始任务。因为，微信的核心是一个社交工具，小程序应当为了适应多任务处理而设计。为了最大限度降低中断的可能性，流程应当高效、且<a href="https://www.nngroup.com/articles/interaction-cost-definition/" target="_blank" rel="noopener">交互成本</a>最小。以下是实施这些原则的一些建议：</p><p>• &nbsp;<strong>保存用户的进度，以便他们稍后可以返回到任务中</strong>。一个叫做 Happy Ball 的赛车小游戏允许用户保存他们的进度，并在稍后再次返回游戏。一位 20 岁的男性用户称赞了这一功能：“我主要在公共交通工具上或者在课堂上感觉无聊时玩这个游戏，都是碎片化的时间。这个功能允许我中断游戏，并且再次返回时不会丢失我的信息，这一点非常好。”</p><p>• &nbsp;<strong>向用户发送提醒，以便用户回到他们离开的地方继续任务</strong>。因为知道用户在支付的过程中可能会被打断，所以当用户在未完成任务的情况下离开京东小程序的支付页面时，京东将在大约半天内向用户发送一个微信提醒。对于忘记了他们的购物车里还保留有商品的用户，这种类型的提醒非常有帮助。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p6_jd_nottification.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">如果用户离开了京东购物小程序的支付页面，京东的微信账号将发送一个提示消息，提醒用户购物车里仍有商品。</p><center></center></center></p><p>• &nbsp;<strong>通过获取微信账号的数据提供良好的默认值，以最大限度减少用户的工作量</strong>。例如，京东小程序的支付页面会自动填充用户信息（地址和电话号码），因为京东的账号连接到了用户的微信账号。因此，即使是第一次打开京东小程序的用户也可以享受「一键支付」，而无需输入他们的详细信息。</p><h3 id="3-利用平台的核心功能。"><a href="#3-利用平台的核心功能。" class="headerlink" title="3. 利用平台的核心功能。"></a>3. 利用平台的核心功能。</h3><p>许多用户提到，他们对大部分小程序和小游戏的了解来自于群聊或者好友。一个好的小程序会利用微信的核心功能，即通信。例如，京东的小程序甚至比移动 app 更能促进主页上的团购。（如果有足够的人同意购买这件商品，团购将对这个产品提供折扣。如果一个商品没有得到足够的订单，就没有人可以获得这个产品。）在微信这个环境中强调团购非常有意义，因为这个平台使得用户可以很方便地与他们的好友分享链接，然后邀请他们参与团购。<br>鼓励用户分享对你的业务是有好处的，但别过度。在我们的测试中，许多用户抱怨说，小程序，特别是小游戏，强迫他们向其他用户分享内容。参与者解释说，“如果我需要通过分享游戏来获得奖励，并继续玩下去，我甚至宁愿不要奖励，”并且“强制分享是最糟糕的。”一位 20 岁的男性用户说，“如果你的内容真的非常好，人们会主动分享的──不要像传销一样强迫我分享。”</p><h3 id="4-设计小程序需考虑不常使用的用户。"><a href="#4-设计小程序需考虑不常使用的用户。" class="headerlink" title="4. 设计小程序需考虑不常使用的用户。"></a>4. 设计小程序需考虑不常使用的用户。</h3><p>我们的许多研究参与者说，他们更喜欢那些提供他们仅偶尔使用的服务的小程序，以<strong>节省手机空间</strong>。例如，一个用户解释说：“如果我一个月只需要使用一次这个功能，我会使用小程序。例如，干洗。我不需要下载一个用于干洗的应用。我只需要使用小程序就好了。”<strong>设计师应当了解偶尔使用的用户的需求，并在小程序中直接解决它们</strong>。</p><p>用于邮政运输的顺丰快递小程序就是一个很好的例子。与更全面的移动 app 相比，这个小程序通过围绕最常用的用户任务（安排收件时间）进行设计，解决了用户偶尔使用的需求。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p7_sf_express_2-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">顺丰快递的小程序（左边）的主要功能是收件时间安排，这是偶尔使用该服务的用户的主要需求；相比之下，相应的移动 app 则具有更多的功能。</p><center></center></center></p><p>不常用用户需要极高的可用性，并强调快速学习，因为您不能设想用户将通过长期使用来积累关于设计的知识。传统可用性准则也适用于小程序，以下是我们研究中的一个例子：</p><p>• &nbsp;<strong>设计简单的导航以实现易学性</strong>。例如，家乐福的小程序在导航栏中使用了图标和文本，这对老年人来说很友好。一位 55 岁的男性用户，他甚至不知道如何搜索一个小程序， 但他可以轻松地在这个小程序中浏览不同的类别和商品，因为它足够简单直观。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p8_carrefour_miniprogram_clearnavigation-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">家乐福的小程序使用清晰的导航、图标和大图片；这些特点有助于新手用户和年长用户的使用。</p><center></center></center></p><h3 id="5-支持无缝的跨渠道转换。"><a href="#5-支持无缝的跨渠道转换。" class="headerlink" title="5. 支持无缝的跨渠道转换。"></a>5. 支持无缝的跨渠道转换。</h3><p>客户可通过不同的渠道与组织进行交流：移动应用，移动网站，桌面网站，微信小程序，微信官方账号，等等。设计师应该考虑客户的整个使用流程，提供一个跨渠道的<a href="https://www.nngroup.com/articles/seamless-cross-channel/" target="_blank" rel="noopener">无缝用户体验</a>。</p><p>• &nbsp;<strong>简化渠道转换</strong>。一个很好的例子是，当用户想要的商品恢复库存时，京东商城是如何提醒用户的。由于与微信官方账号不同，小程序无法发送通知，所以京东小程序提供了相应的京东官方微信账号的二维码；通过关注这个账号，用户便可接收来自京东的消息，并知道他们的商品何时有货。在我们的测试中，一名用户按照这个流程收到了他打算订购的 VR 眼睛的通知。他评论说，“这家公司考虑非常周到。”</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p9_jdshopping_qrcode.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">如果用户对小程序中某个不可用的功能感兴趣，京东商城小程序将引导用户使用另一个不同的渠道（京东的微信官方账号）（当商品恢复库存时可收到通知）。</p><center></center></center></p><p>• &nbsp;<strong>在要求用户切换到另一个渠道之前，先提供一些内容</strong>。在渠道之间切换会带来很高的感知成本：用户需要相信为了实现这种转换而付出的努力是值得的。在我们的测试中，一个小程序要求用户关注该公司的微信账号，以获取更多关于其产品的信息。由于这个<a href="https://www.nngroup.com/videos/pyramid-trust/" target="_blank" rel="noopener">请求过早</a>（她只是刚刚打开小程序并点击了一个按钮），于是她立即退出了这个小程序。</p><img src="/2019/05/03/译-应用中的应用：从微信小程序中学到的用户体验/p10_lightcamera_searchtofollow-copy.jpg"><p><center><p style="font-size:12px; color:#C0C0C0">在用户刚打开程序并点击了主页上的一个按钮之后，这个小程序就要求用户关注该公司的微信账号。一个研究参与者直接退出了这个小程序。</p><center></center></center></p><p>• &nbsp;<strong>提供切换渠道的简单路径</strong>。在我们的研究中，一位 37 岁的女性用户非常喜欢一个叫做 Heika Camera 的小程序，它可以美化她的猫的照片。她想要下载手机应用，但是她在小程序中搜寻之后，却找不到任何可以访问移动应用的途径。<br><br></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>微信小程序是一种新的互动渠道；像这样的新渠道可能随时随地出现。设计师必须保持敏锐，并调整他们的产品以适应这种新的互动方式。<br>为了利用这些新机会，了解它们的优势和局限非常重要。如果你发现自己在应用程序中设计应用程序，或为功能有限的渠道（例如，<a href="https://www.nngroup.com/articles/smartwatch/" target="_blank" rel="noopener">智能手表</a>、<a href="https://www.nngroup.com/articles/voice-assistant-attitudes/" target="_blank" rel="noopener">语音助手</a>）进行设计，请记住以下几点：<br>• &nbsp;根据使用环境和使用频率为产品增值。<br>• &nbsp;考虑切换渠道的成本以及如何使转换无缝。<br>• &nbsp;为该平台的用户提供内容和视觉效果。<br><br></p><hr><p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>]]></content>
     
@@ -96,9 +124,9 @@
     
       <category term="交互设计" scheme="http://zyunn.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
-    
       <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
+    
+      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
     
       <category term="导航" scheme="http://zyunn.com/tags/%E5%AF%BC%E8%88%AA/"/>
     
@@ -158,9 +186,9 @@
     
       <category term="交互设计" scheme="http://zyunn.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
-    
       <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
+    
+      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
     
   </entry>
   
@@ -188,9 +216,9 @@
     
       <category term="交互设计" scheme="http://zyunn.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
     
-      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
-    
       <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
+    
+      <category term="Web" scheme="http://zyunn.com/tags/Web/"/>
     
   </entry>
   
