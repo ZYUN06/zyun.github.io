@@ -291,7 +291,7 @@
                 目前共计 7 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/NN-g/" style="font-size: 26.4px; color: #363636">NN/g</a> <a href="/tags/Web/" style="font-size: 19.2px; color: #818181">Web</a> <a href="/tags/交互设计/" style="font-size: 22.8px; color: #5c5c5c">交互设计</a> <a href="/tags/导航/" style="font-size: 15.6px; color: #a7a7a7">导航</a> <a href="/tags/心理学/" style="font-size: 12px; color: #ccc">心理学</a> <a href="/tags/用户体验/" style="font-size: 15.6px; color: #a7a7a7">用户体验</a> <a href="/tags/译文/" style="font-size: 30px; color: #111">译文</a>
+              <a href="/tags/NN-g/" style="font-size: 26.4px; color: #363636">NN/g</a> <a href="/tags/Web/" style="font-size: 19.2px; color: #818181">Web</a> <a href="/tags/交互设计/" style="font-size: 22.8px; color: #5c5c5c">交互设计</a> <a href="/tags/导航/" style="font-size: 19.2px; color: #818181">导航</a> <a href="/tags/心理学/" style="font-size: 12px; color: #ccc">心理学</a> <a href="/tags/用户体验/" style="font-size: 15.6px; color: #a7a7a7">用户体验</a> <a href="/tags/译文/" style="font-size: 30px; color: #111">译文</a>
             </div>
           </div>
         
@@ -477,6 +477,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'qthvtUKgTzGGdwGl4IbESRpa-gzGzoHsz',
+        appKey: 'W0ChVbUXIqAfuGndiuQ5VWtk',
+        placeholder: '有什么想对我说的话都可以写下来啊',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
