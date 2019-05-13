@@ -1824,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fc6ee3;
+  background: #a6597c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3079,6 +3079,12 @@ div.vedit {
 }
 .v .vlist .vcard .vh .vmeta {
   float: right !important;
+}
+.v .vempty {
+  padding: 1.25rem;
+  text-align: center;
+  color: #999;
+  font-size: 14px !important;
 }
 .v .vlist .vcard .vcontent.expand:after {
   content: "点击查看全部" !important;

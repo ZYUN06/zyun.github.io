@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyunn.com/"/>
-  <updated>2019-05-13T03:56:44.083Z</updated>
+  <updated>2019-05-13T23:56:39.725Z</updated>
   <id>http://zyunn.com/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Social Proof 社会认同</title>
+    <link href="http://zyunn.com/2019/05/13/Social-Proof-%E7%A4%BE%E4%BC%9A%E8%AE%A4%E5%90%8C/"/>
+    <id>http://zyunn.com/2019/05/13/Social-Proof-社会认同/</id>
+    <published>2019-05-13T09:31:48.000Z</published>
+    <updated>2019-05-13T23:56:39.725Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="社会认同是什么？"><a href="#社会认同是什么？" class="headerlink" title="社会认同是什么？"></a>社会认同是什么？</h2><p><a href="https://en.wikipedia.org/wiki/Social_proof" target="_blank" rel="noopener">社会认同</a>是 <a href="https://en.wikipedia.org/wiki/Robert_Cialdini" target="_blank" rel="noopener">Robert Cialdini</a> 在其著作《<a href="https://www.amazon.com/dp/006124189X?tag=useitcomusablein" target="_blank" rel="noopener">影响力：说服心理学</a>》（最早出版于 1984 年）中提出的 6 个影响力原则之一。它描述了一种心理和社会现象：人们通过模仿他人的行为，以试图在特定的情况下采取行为。<a id="more"></a></p><p>简单地说，社会认同就是个人在群体中的从众心理。当人们处在新的或不熟悉的环境中时，我们会倾向于认为他人比自己更加了解所处的情况，他人的行为也总是合理和正确的。因此，个人会做出和他人一样的行为，以获得群体的认同。</p><h2 id="社会认同相关的社会现象"><a href="#社会认同相关的社会现象" class="headerlink" title="社会认同相关的社会现象"></a>社会认同相关的社会现象</h2><p>当你在逛街时，如果看到某家店门口排着长长的队，你可能会认为这家店很有人气，从而认为这家店的商品一定很好，因此，自己也很想去买。</p><h2 id="社会认同在产品设计中的应用"><a href="#社会认同在产品设计中的应用" class="headerlink" title="社会认同在产品设计中的应用"></a>社会认同在产品设计中的应用</h2><p>人们会通过借鉴他人的行为来指导自己的行为。因此，我们可以在产品设计中体现一个群体的行为、观点和建议等等，以影响用户。</p><ul><li>统计数据，如点赞数、评论数、阅读数等等</li></ul><img src="/2019/05/13/Social-Proof-社会认同/1.PNG"><img src="/2019/05/13/Social-Proof-社会认同/2.PNG"><ul><li>展示良好的积极评价或推荐</li></ul><img src="/2019/05/13/Social-Proof-社会认同/3.PNG"><ul><li>提供其他用户的行为或结果的可见性<br>如，朋友在看，XX 刚刚喜欢了这首歌，喜欢这首歌的人也喜欢 XX，XX 刚刚点了这家外卖，XX 刚刚购买了这款大衣，等等。</li></ul><img src="/2019/05/13/Social-Proof-社会认同/4.PNG"><img src="/2019/05/13/Social-Proof-社会认同/5.PNG">]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;社会认同是什么？&quot;&gt;&lt;a href=&quot;#社会认同是什么？&quot; class=&quot;headerlink&quot; title=&quot;社会认同是什么？&quot;&gt;&lt;/a&gt;社会认同是什么？&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Social_proof&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;社会认同&lt;/a&gt;是 &lt;a href=&quot;https://en.wikipedia.org/wiki/Robert_Cialdini&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Robert Cialdini&lt;/a&gt; 在其著作《&lt;a href=&quot;https://www.amazon.com/dp/006124189X?tag=useitcomusablein&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;影响力：说服心理学&lt;/a&gt;》（最早出版于 1984 年）中提出的 6 个影响力原则之一。它描述了一种心理和社会现象：人们通过模仿他人的行为，以试图在特定的情况下采取行为。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="设计理论" scheme="http://zyunn.com/categories/%E8%AE%BE%E8%AE%A1%E7%90%86%E8%AE%BA/"/>
+    
+    
+      <category term="原创" scheme="http://zyunn.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+      <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="心理学" scheme="http://zyunn.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+      <category term="说服心理学" scheme="http://zyunn.com/tags/%E8%AF%B4%E6%9C%8D%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SAP Fiori | Action Sheet 动作菜单</title>
+    <link href="http://zyunn.com/2019/05/13/SAP-Fiori-Action-Sheet-%E5%8A%A8%E4%BD%9C%E8%8F%9C%E5%8D%95/"/>
+    <id>http://zyunn.com/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/</id>
+    <published>2019-05-13T04:06:01.000Z</published>
+    <updated>2019-05-13T14:15:22.392Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Intro-简介"><a href="#Intro-简介" class="headerlink" title="Intro 简介"></a>Intro 简介</h1><p>动作菜单由一系列选项组成，用户可从中进行选择以完成操作。如果屏幕上没有足够的空间，可对选项进行归类。<br>警告：此控件的使用有着诸多限制，通过引入「菜单按钮」可解决这些限制。所以，请尽可能使用「菜单按钮」，而不是「动作菜单」。<a id="more"></a><br><br></p><h1 id="Usage-用法"><a href="#Usage-用法" class="headerlink" title="Usage 用法"></a>Usage 用法</h1><p>请使用动作菜单：</p><ul><li>当需要一个提供多个操作的选择时。</li><li>在手机上，使用户保持在一个上下文环境中非常重要。</li><li>只有少量的操作时。</li></ul><p>请勿使用动作菜单：</p><ul><li>菜单中仅提供一个选项。在这种情况下，请考虑使用<a href="https://experience.sap.com/fiori-design-web/button/" target="_blank" rel="noopener">「按钮」</a>。</li><li>需要显示一个分层级的菜单时。在这种情况下，请考虑使用<a href="https://experience.sap.com/fiori-design-web/menu-button/" target="_blank" rel="noopener">「菜单按钮」</a>。</li><li>对用户来说，<a href="https://experience.sap.com/fiori-design-web/menu-button/" target="_blank" rel="noopener">「分割按钮」</a>更有效。分割按钮提供了易于访问的默认操作，并提供了包含其他操作的选项。<br><br></li></ul><h1 id="Responsiveness-and-Adaptiveness-响应性和适应性"><a href="#Responsiveness-and-Adaptiveness-响应性和适应性" class="headerlink" title="Responsiveness and Adaptiveness 响应性和适应性"></a>Responsiveness and Adaptiveness 响应性和适应性</h1><p>动作菜单是完全响应的。在智能手机上，操作以列表的形式显示在对话框中。在平板电脑和桌面设备上，操作显示在<a href="https://experience.sap.com/fiori-design-web/popover/" target="_blank" rel="noopener">气泡弹出框</a>中。</p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/smartphone.png"><p><center><p style="font-size:12px; color:#C0C0C0">Size S（智能手机）：对话框</p><center><br></center></center></p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/tablet.png"><p><center><p style="font-size:12px; color:#C0C0C0">Size M（平板电脑）：气泡弹出框</p><center><br></center></center></p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/desktop.png"><p><center><p style="font-size:12px; color:#C0C0C0">Size L（桌面设备）：气泡弹出框</p><center><br></center></center></p><h1 id="Layout-布局"><a href="#Layout-布局" class="headerlink" title="Layout 布局"></a>Layout 布局</h1><p>动作菜单中的所有元素都是左对齐的。操作总是按重要程度从上至下排列。「取消」按钮使用负向按钮样式，并且居中以区别于其他操作。操作中按钮的点击区域包含动作菜单的整个宽度 （反过来，这个宽度又取决于最长的按钮）。</p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/dimentions_cozy-1.png"><p><center><p style="font-size:12px; color:#C0C0C0">对话框</p><center></center></center></p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/dimentions_cozy-1.png"><p><center><p style="font-size:12px; color:#C0C0C0">气泡弹出框</p><center><br></center></center></p><h1 id="Components-组件"><a href="#Components-组件" class="headerlink" title="Components 组件"></a>Components 组件</h1><p>以下元素可被放置在动作菜单中：</p><ul><li><a href="https://experience.sap.com/fiori-design-web/button/" target="_blank" rel="noopener">按钮</a></li><li><a href="https://experience.sap.com/fiori-design-web/icons/" target="_blank" rel="noopener">图标</a><br><br></li></ul><h1 id="Behavior-and-Interaction-行为与交互"><a href="#Behavior-and-Interaction-行为与交互" class="headerlink" title="Behavior and Interaction 行为与交互"></a>Behavior and Interaction 行为与交互</h1><p>点击（Clicking/Tapping）<br>根据设备的不同，点击溢出按钮（「…」）可打开气泡弹出框或者对话框。用户可通过点击屏幕上的其他任何地方来触发操作或者关闭动作菜单。在智能手机上，只能通过「取消」按钮关闭对话框。<br>如果用户触发了某个操作，动作面板将自动关闭，同时系统将提供一个<a href="https://experience.sap.com/fiori-design-web/message-toast/" target="_blank" rel="noopener">消息提示</a>。</p><img src="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/clicking-and-tapping.gif"><p><center><p style="font-size:12px; color:#C0C0C0">气泡弹出框</p><center><br></center></center></p><h1 id="Guidelines-指南"><a href="#Guidelines-指南" class="headerlink" title="Guidelines 指南"></a>Guidelines 指南</h1><ul><li>请勿在动作菜单中只使用图标。仅显示文本或图标与文本的结合。</li><li>在智能手机上，提供「取消」按钮以便用户在不触发任何操作的情况下关闭对话框。</li><li>避免在动作面板中进行滚动。如果一个动作菜单中按钮过多，用户就不得不通过滚动来查看列表中的所有操作。这不仅增加了用户区分操作的时间，而且在滚动的过程中非常容易误操作。<br><br></li></ul><blockquote class="question"> 原文：<a href="https://experience.sap.com/fiori-design-web/action-sheet/" target="_blank" rel="noopener">Action Sheet | SAP Fiori Design Guidelines</a><br>备注：文章内容翻译自 <a href="https://experience.sap.com/fiori-design-web/" target="_blank" rel="noopener">SAP - Fiori Design Guidelines</a>。翻译包含个人理解，仅作为个人学习笔记使用。如有错误，求指正呀，非常感谢 ^^<br></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Intro-简介&quot;&gt;&lt;a href=&quot;#Intro-简介&quot; class=&quot;headerlink&quot; title=&quot;Intro 简介&quot;&gt;&lt;/a&gt;Intro 简介&lt;/h1&gt;&lt;p&gt;动作菜单由一系列选项组成，用户可从中进行选择以完成操作。如果屏幕上没有足够的空间，可对选项进行归类。&lt;br&gt;警告：此控件的使用有着诸多限制，通过引入「菜单按钮」可解决这些限制。所以，请尽可能使用「菜单按钮」，而不是「动作菜单」。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="译文" scheme="http://zyunn.com/categories/%E8%AF%91%E6%96%87/"/>
+    
+      <category term="SAP Fiori" scheme="http://zyunn.com/categories/SAP-Fiori/"/>
+    
+    
+      <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
+    
+      <category term="设计指南" scheme="http://zyunn.com/tags/%E8%AE%BE%E8%AE%A1%E6%8C%87%E5%8D%97/"/>
+    
+      <category term="SAP Fiori" scheme="http://zyunn.com/tags/SAP-Fiori/"/>
+    
+  </entry>
   
   <entry>
     <title>译 | 在公司里推动一个设计系统</title>
@@ -160,11 +216,11 @@
     
       <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
-    
       <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
     
       <category term="心理学" scheme="http://zyunn.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
     
   </entry>
   
@@ -218,9 +274,9 @@
     
       <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
-    
       <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
     
   </entry>
   
@@ -246,9 +302,9 @@
     
       <category term="译文" scheme="http://zyunn.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
-    
       <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="NN/g" scheme="http://zyunn.com/tags/NN-g/"/>
     
   </entry>
   
