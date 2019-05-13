@@ -1824,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #00ffcd;
+  background: #ffff85;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3022,6 +3022,7 @@ div.vedit {
 .v .vlist .vcard .vh .vmeta .vat {
   color: #999 !important;
   font-size: 14px !important;
+  margin-right: 0.875rem;
 }
 .v .vlist .vcard .vh .vmeta .vat:active,
 .vlist .vcard .vh .vmeta .vat:hover {
