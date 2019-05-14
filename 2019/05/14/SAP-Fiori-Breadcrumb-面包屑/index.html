@@ -94,17 +94,21 @@
 <meta name="description" content="Intro 简介面包屑导航（Breadcrumb 或 breadcrumb trail）是一种辅助导航，用于显示当前页面在其应用层次结构中的位置。它通常用于向下钻取挖掘的场景，用户在其中浏览相关对象页面、表格和图表。">
 <meta name="keywords" content="译文,设计指南,SAP Fiori">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SAP Fiori: Breadcrumb 面包屑">
+<meta property="og:title" content="SAP Fiori：Breadcrumb 面包屑">
 <meta property="og:url" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/index.html">
 <meta property="og:site_name" content="ZYUN">
 <meta property="og:description" content="Intro 简介面包屑导航（Breadcrumb 或 breadcrumb trail）是一种辅助导航，用于显示当前页面在其应用层次结构中的位置。它通常用于向下钻取挖掘的场景，用户在其中浏览相关对象页面、表格和图表。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/1.png">
-<meta property="og:updated_time" content="2019-05-14T02:35:13.158Z">
+<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-L-.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-M-.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-S1.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-S2.png">
+<meta property="og:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-wth-current-page.png">
+<meta property="og:updated_time" content="2019-05-14T03:13:28.355Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SAP Fiori: Breadcrumb 面包屑">
+<meta name="twitter:title" content="SAP Fiori：Breadcrumb 面包屑">
 <meta name="twitter:description" content="Intro 简介面包屑导航（Breadcrumb 或 breadcrumb trail）是一种辅助导航，用于显示当前页面在其应用层次结构中的位置。它通常用于向下钻取挖掘的场景，用户在其中浏览相关对象页面、表格和图表。">
-<meta name="twitter:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/1.png">
+<meta name="twitter:image" content="http://zyunn.com/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-L-.png">
 
 
 
@@ -140,7 +144,7 @@
 
 
 
-  <title>SAP Fiori: Breadcrumb 面包屑 | ZYUN</title>
+  <title>SAP Fiori：Breadcrumb 面包屑 | ZYUN</title>
   
 
 
@@ -304,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">SAP Fiori: Breadcrumb 面包屑</h1>
+          <h1 class="post-title" itemprop="name headline">SAP Fiori：Breadcrumb 面包屑</h1>
         
 
         <div class="post-meta">
@@ -397,22 +401,31 @@
       
 
       
-        <h1 id="Intro-简介"><a href="#Intro-简介" class="headerlink" title="Intro 简介"></a>Intro 简介</h1><p>面包屑导航（Breadcrumb 或 breadcrumb trail）是一种辅助导航，用于显示当前页面在其应用层次结构中的位置。它通常用于向下钻取挖掘的场景，用户在其中浏览相关对象页面、表格和图表。<a id="more"></a></p>
-<h1 id="Usage-用法"><a href="#Usage-用法" class="headerlink" title="Usage 用法"></a>Usage 用法</h1><p>在以下情况下使用面包屑：<br>您希望在对象页面上显示辅助导航<br>您希望在表格中显示导航<br>您希望在图表中显示导航<br>仅当向下钻取的场景指向相关对象页面时才使用面包屑：父对象页面 / 子对象页面 1 / 子对象页面 2 / 子对象页面 3。</p>
-<p>如果出现以下情况，请勿使用面包屑：<br>您的层次结构仅包含一个层级<br>面包屑路径中不应包含以下元素：<br>其他 floorplan，例如概览页面和列表报告<br>跨应用导航至其他对象页面<br>独立的对象页面，例如情况说明书<br>SAPFiori 2.0 的全局导航概念将介绍这些情况。</p>
-<p>Responsiveness and Adaptiveness 响应性和适应性<br>面包屑是响应的。如果水平空间不足，面包屑路径中的链接可折叠放在下拉菜单中：</p>
-<p>面包屑中的第一个链接（起点）首先折叠，然后是层次结构中的下一个链接。<br>面包屑中的最后一个元素始终是可见的，并且永远都不会被折叠进下拉菜单中。<br>如果水平空间不足，则截断显示最后一个元素。</p>
-<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/1.png">
-<p><center><p style="font-size:12px; color:#C0C0C0">面包屑 - Size L</p><center><br></center></center></p>
-<p>面包屑 - Size M<br>面包屑 - Size S<br>面包屑 - Size S（下拉菜单）</p>
-<h1 id="Layout-布局"><a href="#Layout-布局" class="headerlink" title="Layout 布局"></a>Layout 布局</h1><p>面包屑的水平布局永远保持不变。链接总是紧挨着显示。</p>
-<h1 id="Types-类型"><a href="#Types-类型" class="headerlink" title="Types 类型"></a>Types 类型</h1><p>面包屑有两种类型：</p>
-<p>标准面包屑<br>标准的面包屑将当前页面作为最后一项显示。最后一项只包含纯文本，而不是链接。<br>不包含当前页面的面包屑<br>仅在对象页面中使用此面包屑。面包屑显示了对象页面在应用中的位置，不显示当前页面。面包屑中的所有项目都是链接。<br>标准面包屑<br>不显示当前页面的面包屑</p>
-<h1 id="Components-组件"><a href="#Components-组件" class="headerlink" title="Components 组件"></a>Components 组件</h1><p>面包屑可包含链接和文本（标准面包屑），或者只包含链接（不包含当前页面的面包屑）。</p>
-<h1 id="Behavior-and-Interaction-行为与交互"><a href="#Behavior-and-Interaction-行为与交互" class="headerlink" title="Behavior and Interaction 行为与交互"></a>Behavior and Interaction 行为与交互</h1><p>导航<br>面包屑的目的是触发导航。当用户点击面包屑路径中的链接时，将触发此操作。<br>有关链接的行为和交互，请参阅 链接。</p>
-<h1 id="Styles-样式"><a href="#Styles-样式" class="headerlink" title="Styles 样式"></a>Styles 样式</h1><p>要了解不同的链接样式，请参阅 链接。</p>
+        <h1 id="Intro-简介"><a href="#Intro-简介" class="headerlink" title="Intro 简介"></a>Intro 简介</h1><p>面包屑导航（Breadcrumb 或 breadcrumb trail）是一种辅助导航，用于显示当前页面在其应用层次结构中的位置。它通常用于向下钻取挖掘的场景，用户在其中浏览相关对象页面、表格和图表。<a id="more"></a><br><br></p>
+<h1 id="Usage-用法"><a href="#Usage-用法" class="headerlink" title="Usage 用法"></a>Usage 用法</h1><h5 id="如果出现以下情况，请使用面包屑："><a href="#如果出现以下情况，请使用面包屑：" class="headerlink" title="如果出现以下情况，请使用面包屑："></a>如果出现以下情况，请使用面包屑：</h5><p>• &nbsp;您希望在对象页面上显示辅助导航<br>• &nbsp;您希望在表格中显示导航<br>• &nbsp;您希望在图表中显示导航</p>
+<p>仅当向下钻取的场景指向相关对象页面时才使用面包屑：父对象页面 / 子对象页面 1 / 子对象页面 2 / 子对象页面 3。</p>
+<h5 id="如果出现以下情况，请勿使用面包屑："><a href="#如果出现以下情况，请勿使用面包屑：" class="headerlink" title="如果出现以下情况，请勿使用面包屑："></a>如果出现以下情况，请勿使用面包屑：</h5><p>• &nbsp;您的层次结构仅包含一个层级</p>
+<h5 id="面包屑路径中不应包含以下元素："><a href="#面包屑路径中不应包含以下元素：" class="headerlink" title="面包屑路径中不应包含以下元素："></a>面包屑路径中不应包含以下元素：</h5><p>• &nbsp;其他 floorplan，例如概览页面和列表报告<br>• &nbsp;跨应用导航至其他对象页面<br>• &nbsp;独立的对象页面，例如情况说明书<br>• &nbsp;SAPFiori 2.0 的全局导航概念将介绍这些情况。<br><br></p>
+<h1 id="Responsiveness-and-Adaptiveness-响应性和适应性"><a href="#Responsiveness-and-Adaptiveness-响应性和适应性" class="headerlink" title="Responsiveness and Adaptiveness 响应性和适应性"></a>Responsiveness and Adaptiveness 响应性和适应性</h1><p>面包屑是响应的。如果水平空间不足，面包屑路径中的链接可折叠放在下拉菜单中：<br>• &nbsp;面包屑中的第一个链接（起点）首先折叠，然后是层次结构中的下一个链接。<br>• &nbsp;面包屑中的最后一个元素始终是可见的，并且永远都不会被折叠进下拉菜单中。<br>• &nbsp;如果水平空间不足，则截断显示最后一个元素。</p>
+<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-L-.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">面包屑 - Size L</p><center></center></center></p>
+<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-M-.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">面包屑 - Size M</p><center></center></center></p>
+<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-S1.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">面包屑 - 面包屑 - Size S</p><center></center></center></p>
+<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-belize-size-S2.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">面包屑 - Size S（下拉菜单）</p><center><br></center></center></p>
+<h1 id="Layout-布局"><a href="#Layout-布局" class="headerlink" title="Layout 布局"></a>Layout 布局</h1><p>面包屑的水平布局永远保持不变。链接总是紧挨着显示。<br><br></p>
+<h1 id="Types-类型"><a href="#Types-类型" class="headerlink" title="Types 类型"></a>Types 类型</h1><p>面包屑有两种类型：<br>• &nbsp;标准面包屑<br>标准的面包屑将当前页面作为最后一项显示。最后一项只包含纯文本，而不是链接。<br>• &nbsp;不包含当前页面的面包屑<br>仅在对象页面中使用此面包屑。面包屑显示了对象页面在应用中的位置，不显示当前页面。面包屑中的所有项目都是链接。</p>
+
+<p><center><p style="font-size:12px; color:#C0C0C0">标准面包屑</p><center></center></center></p>
+<img src="/2019/05/14/SAP-Fiori-Breadcrumb-面包屑/breadcrumb-wth-current-page.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">不显示当前页面的面包屑</p><center><br></center></center></p>
+<h1 id="Components-组件"><a href="#Components-组件" class="headerlink" title="Components 组件"></a>Components 组件</h1><p>面包屑可包含链接和文本（标准面包屑），或者只包含链接（不包含当前页面的面包屑）。<br><br></p>
+<h1 id="Behavior-and-Interaction-行为与交互"><a href="#Behavior-and-Interaction-行为与交互" class="headerlink" title="Behavior and Interaction 行为与交互"></a>Behavior and Interaction 行为与交互</h1><h5 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h5><p>面包屑的目的是触发导航。当用户点击面包屑路径中的链接时，将触发此操作。<br>有关链接的行为和交互，请参阅<a href="https://experience.sap.com/fiori-design-web/link/" target="_blank" rel="noopener">链接</a>。<br><br></p>
+<h1 id="Styles-样式"><a href="#Styles-样式" class="headerlink" title="Styles 样式"></a>Styles 样式</h1><p>要了解不同的链接样式，请参阅 链接。<br><br></p>
 <h1 id="Guidelines-指南"><a href="#Guidelines-指南" class="headerlink" title="Guidelines 指南"></a>Guidelines 指南</h1><p>在桌面和平板设备的下拉菜单中，仅显示面包屑路径中不可见的链接。<br>在智能手机的下拉菜单中，按层级顺序显示面包屑路径中的所有链接。<br><br></p>
-<blockquote class="question"> 原文：<a href="https://experience.sap.com/fiori-design-web/action-sheet/" target="_blank" rel="noopener">Action Sheet | SAP Fiori Design Guidelines</a><br>备注：文章内容翻译自 <a href="https://experience.sap.com/fiori-design-web/" target="_blank" rel="noopener">SAP - Fiori Design Guidelines</a>。翻译包含个人理解，仅作为个人学习笔记使用。如有错误，求指正呀，非常感谢 ^^<br></blockquote>
+<blockquote class="question"> 原文：<a href="https://experience.sap.com/fiori-design-web/breadcrumb/" target="_blank" rel="noopener">Breadcrumb | SAP Fiori Design Guidelines</a><br>备注：文章内容翻译自 <a href="https://experience.sap.com/fiori-design-web/" target="_blank" rel="noopener">SAP - Fiori Design Guidelines</a>。翻译包含个人理解，仅作为个人学习笔记使用。如有错误，求指正呀，非常感谢 ^^<br></blockquote>
 
 
       
@@ -450,8 +463,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/" rel="next" title="SAP Fiori | Action Sheet 动作菜单">
-                <i class="fa fa-chevron-left"></i> SAP Fiori | Action Sheet 动作菜单
+              <a href="/2019/05/13/SAP-Fiori-Action-Sheet-动作菜单/" rel="next" title="SAP Fiori：Action Sheet 动作菜单">
+                <i class="fa fa-chevron-left"></i> SAP Fiori：Action Sheet 动作菜单
               </a>
             
           </div>
