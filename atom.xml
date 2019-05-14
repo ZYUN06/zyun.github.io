@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyunn.com/"/>
-  <updated>2019-05-14T03:14:58.226Z</updated>
+  <updated>2019-05-14T14:51:54.148Z</updated>
   <id>http://zyunn.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《设计之下》读书笔记</title>
+    <link href="http://zyunn.com/2019/05/14/%E3%80%8A%E8%AE%BE%E8%AE%A1%E4%B9%8B%E4%B8%8B%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://zyunn.com/2019/05/14/《设计之下》读书笔记/</id>
+    <published>2019-05-14T13:41:52.000Z</published>
+    <updated>2019-05-14T14:51:54.148Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2019/05/14/《设计之下》读书笔记/cover.jpeg"><a id="more"></a><p><br></p><h1 id="前言"><a href="#前言" class="headerlink" title="# 前言"></a># 前言</h1><hr><ol><li><p>用户体验绝不是一个页面，一个 icon，一个动效，而是由这些基本元素构成的<strong>一个系统的流程</strong>，可以说是<strong>用户的浏览路径</strong>。</p></li><li><p>宜家的购物路线是一种典型的用户体验设计。</p></li></ol><ul><li>通过导视标志和墙壁的阻隔与划分形成了蜿蜒而接近唯一的浏览路径，巧妙地解决了顾客迷路的问题，且保证顾客基本看到了所有商品，从而最大限度地挖掘顾客的购买潜力。<br>传统商场的购物点往往是散状分布的，即便有很多路径相连和功能划分，仍很容易迷路。<br>—— 设计软件时，也要<strong>考虑用户的使用路径</strong>。用最简单的方式引导，帮用户找到关注的内容和想使用的功能，快速地进行消费。</li><li>样板间，如“餐厅”、“客厅”、“厨房”等等。消费者买下水杯后，会感觉其搭配的餐垫也不错，桌椅风格也相符，最后买下整个餐厅的大部分装饰。让商品之间产生联系，引导消费者购买搭配好的套餐。<br>—— 这是一种典型的<strong>场景化设计</strong>。从产品的角度解释，样板间在这个整个购物流程中起到了流量的再分发作用，并且将模块和功能之间相互打通，是整个购物流程中的关键节点。如新浪微博的广场就是这种流量再分发在软件上的体现。</li></ul><ol start="3"><li>内容即 UI。视觉上扁平不如<strong>让内容层级和交互逻辑扁平</strong>。<br><br><br><br></li></ol><h1 id="解析需求"><a href="#解析需求" class="headerlink" title="# 解析需求"></a># 解析需求</h1><hr><h3 id="交互设计五要素"><a href="#交互设计五要素" class="headerlink" title="交互设计五要素"></a>交互设计五要素</h3><ul><li>人、动作、完成动作必要的辅助工具、周围的环境和目的。</li><li>人 / 通过工具 / 完成动作 / 达到目的 / 在环境里，这个句子格式可用于任何项目、任何功能。<br><br></li></ul><h3 id="解析需求的方法"><a href="#解析需求的方法" class="headerlink" title="解析需求的方法"></a>解析需求的方法</h3><ul><li>交互模型、功能系统、信息架构。</li><li>交互模型是指根据产品需求文档，绘制可以体现并很好地串联起交互五要素的图表，表现产品“外在”的生态系统。然后进一步，绘制功能系统来分析产品”内在”的具体功能，以及体现每个功能间的信息流和交互方式的信息架构。</li><li>交互模型关注的是用户与产品的关系，功能系统侧重的则是产品内部各个模块之间的结构，信息架构的重点是梳理信息流动的过程。<br><br></li></ul><h3 id="交互模型-Interaction-Model"><a href="#交互模型-Interaction-Model" class="headerlink" title="交互模型 Interaction Model"></a>交互模型 Interaction Model</h3><h4 id="操作（动作）"><a href="#操作（动作）" class="headerlink" title="操作（动作）"></a>操作（动作）</h4><p>对于智能手机端的应用，操作主要分为两类。</p><ul><li>一类是针对手机硬件的开发，如“语音对话”、“摇一摇”、手机震动、提示灯、提示音等。</li><li>另一类是针对软件操作的，如单击、双击、左右滑动、按钮。<br>这类操作一般对应界面上具体的元素，如按钮，或是人们基于对自然事物的理解所形成的操作习惯，如左右滑动来切换上下页。</li></ul><h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><p>可从两个方面考虑环境因素：限制和优势。</p><ol><li>作为移动端的应用，用户所处环境没有坐在电脑前那么稳定，比如在走动中，或手天气影响（如天气太冷戴手套不便操作）。因此，需要更多地发觉手机的特性，为一些原本“较为精确的操作”提供其他选择。（提供其他选择，而不是完全替代传统操作。）例如：</li></ol><ul><li>不同于电脑前的长阅读，大家在手机端往往是一种短阅读的状态，获取的信息和反馈都是碎片化的，所以通过发送语音和图片来表达观点和抒发感情也是一种不错的选择。</li><li>手势操作：如，左右滑动界面切换上下篇，必点击按钮的容错率高很多，更适合在走动中操作。</li></ul><ol start="2"><li>平板的阅读状态比电脑闲适，但比手机稳定。在设计时也应针对性思考。<br><br></li></ol><h3 id="信息架构-Information-Architecture"><a href="#信息架构-Information-Architecture" class="headerlink" title="信息架构 Information Architecture"></a>信息架构 Information Architecture</h3><ul><li>信息架构是信息直观表达的载体，诞生于数据库设计领域。</li><li>信息架构的主体对象是信息，通过设计结构、决定组织方式及归类，以达到让使用者容易寻找和管理的目的。</li><li>信息的流通可以体现在用户完成一个任务时所经历的不走，是否和他的预期相同，这个“预期”一般来自于人的本能和经验。任务也有轻重之分。</li><li><p>对理论的学习和掌握是必要的，但更多的是启发作用，意在建立个人的信息架构意识。</p></li><li><p>设计信息架构时的注意点：</p></li></ul><ol><li>优先考虑用户体验的设计原则。以用户为中心，通过拆分用户的行为，力求为他们设计最简捷的操作步骤。</li><li>对技术需要一定的了解或基本意识。在工作中多和前端、后台的工程师沟通，以确保设计出来的产品架构和交互方式不会带来不必要的技术负担。</li><li>从产品策略和延展性的角度考虑。如今产品迭代很快，功能越来越丰富，所以，在做信息架构时，需从产品的宏观架构上考虑，达到“便于未来延展”的目标。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;img src=&quot;/2019/05/14/《设计之下》读书笔记/cover.jpeg&quot;&gt;
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://zyunn.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="读书笔记" scheme="http://zyunn.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="设计之下" scheme="http://zyunn.com/tags/%E8%AE%BE%E8%AE%A1%E4%B9%8B%E4%B8%8B/"/>
+    
+      <category term="交互设计" scheme="http://zyunn.com/tags/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>Social Proof 社会认同</title>
@@ -543,27 +571,6 @@
     
       &lt;h3 id=&quot;2019-05-01&quot;&gt;&lt;a href=&quot;#2019-05-01&quot; class=&quot;headerlink&quot; title=&quot;# 2019.05.01&quot;&gt;&lt;/a&gt;# 2019.05.01&lt;/h3&gt;&lt;hr&gt;
 &lt;p&gt;今天是 2019 年 5 月 1 号，我们的社会依然面临三大严峻问题。&lt;br&gt;治疗胃溃疡的药，不良反应是，胃炎。&lt;br&gt;抗过敏的药，注意事项是，过敏体质者慎用。&lt;br&gt;缓解抑郁症的药，有增加自杀倾向的风险。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="碎碎念儿" scheme="http://zyunn.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%84%BF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>历经九九八万五千六百七十一难，迎来互联网生涯新高！</title>
-    <link href="http://zyunn.com/2019/04/21/%E5%8E%86%E7%BB%8F%E4%B9%9D%E4%B9%9D%E5%85%AB%E4%B8%87%E4%BA%94%E5%8D%83%E5%85%AD%E7%99%BE%E4%B8%83%E5%8D%81%E4%B8%80%E9%9A%BE%EF%BC%8C%E8%BF%8E%E6%9D%A5%E4%BA%92%E8%81%94%E7%BD%91%E7%94%9F%E6%B6%AF%E6%96%B0%E9%AB%98%EF%BC%81/"/>
-    <id>http://zyunn.com/2019/04/21/历经九九八万五千六百七十一难，迎来互联网生涯新高！/</id>
-    <published>2019-04-21T10:18:18.000Z</published>
-    <updated>2019-05-12T12:05:18.635Z</updated>
-    
-    <content type="html"><![CDATA[<p>折腾了两天之后，我终于拥有自己的部落格啦！哈哈哈哈哈哈开心！快乐！满足！充满希望！（止不住的膨胀 </p><p>谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。<a id="more"></a>在稀里糊涂地安装了 Git、Node.js、Xcode，新建了 repository，弄完了域名注册实名验证域名解析，各种注册各种设置，各种改样式，各种 hexo c、 hexo g、hexo s、hexo d，各种 error 各种 warning 之后，我终于迎来了自己的个人网站。 辛苦我自己了（高光时刻儿 。</p><p>虽然还很简单，但暂时还够用儿，其他的边用边学就好啦。还是要好好学习，好好写文章呐。</p><p>感恩 Hexo，感恩 GitHub，感恩互联网，感恩所有分享经验和想法的人儿吖（扑通一声跪下（感恩「简书」不让我改昵称改头像让我有了建站的小动机儿 。</p><p>Cowabunga！</p><img src="/2019/04/21/历经九九八万五千六百七十一难，迎来互联网生涯新高！/cowabunga.jpeg"><p style="font-size:12px; color:#C0C0C0">图片来源：动画《探险活宝》</p>  ]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;折腾了两天之后，我终于拥有自己的部落格啦！哈哈哈哈哈哈开心！快乐！满足！充满希望！（止不住的膨胀 &lt;/p&gt;
-&lt;p&gt;谁能想到，这个普普通通的周末也许可能就是我这一生中用脑强度最大的两天了。&lt;/p&gt;
     
     </summary>
     
