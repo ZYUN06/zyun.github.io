@@ -1548,15 +1548,15 @@ pre .javascript .function {
   margin-top: 40px;
 }
 .posts-expand .post-tags {
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 100px;
   text-align: center;
 }
 .posts-expand .post-tags a {
   display: inline-block;
   margin-right: 10px;
   font-size: 13px;
-  color: #999;
+  color: #b3b3b3;
 }
 .post-nav {
   display: table;
@@ -1824,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc7b8;
+  background: #ff2bab;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2999,8 +2999,8 @@ div.vedit {
 .v .veditor {
   min-height: 70px !important;
   height: 70px !important;
+  color: #fff !important;
   font-size: 14px !important;
-  color: #000 !important;
   resize: none !important;
 }
 .v .vlist .vcard .vimg {
