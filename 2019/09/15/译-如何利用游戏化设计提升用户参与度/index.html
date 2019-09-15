@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<script>
+    (function(){
+        if(''){
+            if (prompt('在下面输入 201905 就可以打开这篇文章啦。说是文章，其实只是我自己的碎碎念儿，不看也可以呐。') !== ''){
+                alert('我也不知道为啥会再弹一次，要不再点一次「确定」吧，点完就会回到原来的页面啦。不要生气，今天也要开心呐。');
+                history.back();
+            }
+        }
+    })();
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="译文,用户体验,游戏化,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZYUN" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="原文：Gamification in UX. Increasing User Engagement作者：Tubik Studio (2017-04-26)预计阅读时长：5m 52s   现在啊，但凡是个产品，都说自己的设计原则是「以用户为中心」。简单地说，「以用户为中心」就是希望产品能够高度响应用户需求嘛。所以，设计师们就不得不挖空心思，不断地去探寻各种能够提升用户体验的新方法，这些方法可能包含">
+<meta name="keywords" content="译文,用户体验,游戏化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="译 | 如何利用游戏化设计提升用户参与度">
+<meta property="og:url" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/index.html">
+<meta property="og:site_name" content="ZYUN">
+<meta property="og:description" content="原文：Gamification in UX. Increasing User Engagement作者：Tubik Studio (2017-04-26)预计阅读时长：5m 52s   现在啊，但凡是个产品，都说自己的设计原则是「以用户为中心」。简单地说，「以用户为中心」就是希望产品能够高度响应用户需求嘛。所以，设计师们就不得不挖空心思，不断地去探寻各种能够提升用户体验的新方法，这些方法可能包含">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Challenge.jpeg">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Badge.png">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Stickers.gif">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Leaderboards.png">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Journey.png">
+<meta property="og:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Constraints.gif">
+<meta property="og:updated_time" content="2019-09-15T12:47:12.048Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="译 | 如何利用游戏化设计提升用户参与度">
+<meta name="twitter:description" content="原文：Gamification in UX. Increasing User Engagement作者：Tubik Studio (2017-04-26)预计阅读时长：5m 52s   现在啊，但凡是个产品，都说自己的设计原则是「以用户为中心」。简单地说，「以用户为中心」就是希望产品能够高度响应用户需求嘛。所以，设计师们就不得不挖空心思，不断地去探寻各种能够提升用户体验的新方法，这些方法可能包含">
+<meta name="twitter:image" content="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/Challenge.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/">
+
+
+
+
+
+  <title>译 | 如何利用游戏化设计提升用户参与度 | ZYUN</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="site-title">ZYUN</span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zyunn.com/2019/09/15/译-如何利用游戏化设计提升用户参与度/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZYUN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZYUN">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">译 | 如何利用游戏化设计提升用户参与度</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T20:25:45+08:00">
+                2019-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/译文/" itemprop="url" rel="index">
+                    <span itemprop="name">译文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="question"> 原文：<a href="https://uxplanet.org/gamification-in-ux-increasing-user-engagement-6437cbf702aa" target="_blank" rel="noopener">Gamification in UX. Increasing User Engagement</a><br>作者：<a href="https://uxplanet.org/@tubikstudio?source=post_page-----6437cbf702aa----------------------" target="_blank" rel="noopener">Tubik Studio</a> (2017-04-26)<br>预计阅读时长：5m 52s </blockquote>
+
+<p>现在啊，但凡是个产品，都说自己的设计原则是「以用户为中心」。简单地说，「以用户为中心」就是希望产品能够高度响应用户需求嘛。所以，设计师们就不得不挖空心思，不断地去探寻各种能够提升用户体验的新方法，这些方法可能包含了各个不同的方面，比如说情感。而用户则希望产品的使用过程既简单又有趣。因此，在用户体验设计中加入「有趣的元素」这个想法就诞生了。<br>那么，怎样才能使产品变得好玩有趣呢？这个时候，「游戏化」就应运而生了。这篇文章啊，主要介绍的就是，游戏化是什么，游戏化有哪些设计形式，以及它是如何提升用户体验的。<a id="more"></a><br><br></p>
+<h1 id="游戏化是个啥？"><a href="#游戏化是个啥？" class="headerlink" title="游戏化是个啥？"></a>游戏化是个啥？</h1><p><strong>在设计领域中，每当我们提到「游戏化」这个词时，很多人都会误以为它就是「游戏设计」。然而，这两个术语之间几乎没有任何联系，甚至在很多方面都是相反的</strong>。在科技界，「游戏化」指的是将游戏机制应用在非游戏环境（如网站和移动应用程序）中的一种设计方法。<br>例如，如果你希望鼓励用户与你的应用更多地进行交互，那么你可以在应用中加入一些诸如「挑战」的游戏元素。用户将接受一周七天连续进行签到的挑战，并且在挑战完成时获得相应奖励。<br>事实上，人们享受拥有一个明确的目标，并在目标达成时获得奖励的这种体验，因此这样一个挑战势必会引起用户的兴趣。通过这种方式，设计师能够影响用户的行为，并且通过诸如「挑战」和「奖励」等游戏元素去激励他们成为「玩家」并完成预期行为。<br><br></p>
+<h1 id="游戏化的六种常见形式"><a href="#游戏化的六种常见形式" class="headerlink" title="游戏化的六种常见形式"></a>游戏化的六种常见形式</h1><p>游戏化是一种比较复杂的设计方法，需要根据不同的界面交互元素去运用不同的游戏机制。设计师运用游戏化的主要目的并不是将产品完全转化为一个游戏。因此，设计中有它几种常用的有效的游戏机制。现在，让我们来看一下这些机制都是啥。</p>
+<h3 id="挑战（Challenge）"><a href="#挑战（Challenge）" class="headerlink" title="挑战（Challenge）"></a>挑战（Challenge）</h3><p>人类的天性总是驱使我们去接受各种挑战，并且证明我们有处理它们的能力。因此，如果说到最有效的游戏元素，那「挑战」必须拥有姓名。它可以激励人们采取行动，是提升用户体验的绝佳利器。为了增强挑战的效果，最好同时使用各种形式的奖励，这样会让用户更有动力。</p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Challenge.jpeg">
+<p><center><p style="font-size:12px; color:#C0C0C0">Upper APP 的任务挑战</p><center></center></center></p>
+<h3 id="积分（Points）"><a href="#积分（Points）" class="headerlink" title="积分（Points）"></a>积分（Points）</h3><p>为了衡量玩家的成功，很多游戏都会使用积分系统。游戏化的产品同样可以采用这种方式，这不仅能够帮助用户了解自己的成就，也有助于利益相关者对用户在网站或应用中的参与度进行评估。但是，没有必要通过评分表来呈现分数，只需要展示诸如签到或点击次数这样的数据就可以。</p>
+<h3 id="徽章和贴纸（Badge-and-stickers）"><a href="#徽章和贴纸（Badge-and-stickers）" class="headerlink" title="徽章和贴纸（Badge and stickers）"></a>徽章和贴纸（Badge and stickers）</h3><p>当用户完成某项挑战或者达到一定的分数时，就可以获得徽章或贴纸。这种类型的虚拟奖励在电子游戏中很常见，所以用户对它们也很熟悉。其实在很久以前，贴纸就已经深得人们的喜爱了，所以这种类型的奖励也会非常受欢迎，可以成为用户额外的驱动力。<br>除此之外，徽章和贴纸也给了设计师们非常大的创作空间，因为它们可以被设计成各种各样不同的形式。</p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Badge.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">PukaPal 的徽章</p><center></center></center></p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Stickers.gif">
+<p><center><p style="font-size:12px; color:#C0C0C0">Toonie Alarm 的贴纸</p><center></center></center></p>
+<h3 id="排行榜（Leaderboards）"><a href="#排行榜（Leaderboards）" class="headerlink" title="排行榜（Leaderboards）"></a>排行榜（Leaderboards）</h3><p>竞争可以使挑战变得更加有趣。「成为领先者的渴望」能够强烈激发用户的积极性，所以，徽章数排行榜可以增加用户的热情。但是，这种方法有时候也会适得其反，使用户失去动力，例如，当用户看到自己的排名和第一名相去甚远时。<strong>因此，在运用排行榜这个游戏元素时，一定要慎重。</strong></p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Leaderboards.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Snake Battle 的排行榜</p><center></center></center></p>
+<h3 id="体验旅程（Journey）"><a href="#体验旅程（Journey）" class="headerlink" title="体验旅程（Journey）"></a>体验旅程（Journey）</h3><p>这个游戏机制的目的在于，使用户与产品的交互过程尽可能的简单易懂。用户应该像真正的玩家一样，去开启产品使用的个人旅程。例如，在用户登录页面，可以向用户提供功能介绍，这样用户就不会害怕出错。当体验旅程继续时，建议采用「支架式」的方法。所谓「支架式」，就是随着用户使用经验的不断增加，逐步地展示产品的新功能。这种方法可以避免用户出错，并使产品易于使用。<br>此外，在运用用户体验旅程这个元素时，也可以同时使用进度功能。向用户提供关于旅程进度的信息，以此激励用户继续旅程。</p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Journey.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Singify App 的使用指南</p><center></center></center></p>
+<h3 id="限制（Contraints）"><a href="#限制（Contraints）" class="headerlink" title="限制（Contraints）"></a>限制（Contraints）</h3><p>可能很多人都觉得这个一点也不有趣，但确实有这么一种限制玩家时间的游戏元素。例如，电子游戏中的任务往往都需要玩家在规定的时间内完成，否则就会失败。这个方法也适用于游戏化的产品。例如，要求用户去完成一些只有在今天才能执行的任务。这种「限制」可以让用户更快地进行反应，促使用户立即采取行动。</p>
+<img src="/2019/09/15/译-如何利用游戏化设计提升用户参与度/Constraints.gif">
+<p><center><p style="font-size:12px; color:#C0C0C0">Night in Berlin App 的时间限制</p><center></center></center></p>
+<p>以上就是游戏化元素在设计中的一些主要应用方式。当然，可能还会有其它更具创新的元素可以运用在用户体验设计中。有一点需要注意的是，是否使用游戏化元素取决于产品的风格策略和品牌形象。<br><br></p>
+<h1 id="游戏化在-UX-设计中有啥用"><a href="#游戏化在-UX-设计中有啥用" class="headerlink" title="游戏化在 UX 设计中有啥用"></a>游戏化在 UX 设计中有啥用</h1><p>现在啊，「游戏化」在设计中的运用已经相当普遍，因为它能够解决用户体验中的许多问题。恰当地使用「游戏化」，同时精心地选择游戏元素，这将成为用户体验设计师手中的利器，不断地提高用户参与度和转化率。<br>那么它是如何发挥作用的呢？<br>首先，游戏化可以让网站和应用程序变得好玩儿。用户喜欢像电子游戏一样充满乐趣、挑战和竞技精神的交互过程，他们会因此受到鼓励，从而不断地回到产品中。此外，游戏机制也是用户的强大动力源。游戏元素成为各种任务的组成部分，而只有完成任务的用户才可获得相应奖励。这背后的好奇心和兴奋感会驱使用户不断地挑战各项任务，从而在网站和应用中花费更多的时间。<br>如今，游戏化已经成为主要的设计方法之一。很多设计师都跟上了热潮，并积极地将这种方法运用到各种项目中去。这就是为什么，许多用户可能都已经有了与游戏化产品交互的经验。这意味着，他们也期待可以从你的产品中获得同样的体验。<br><br></p>
+<h1 id="打个总结儿"><a href="#打个总结儿" class="headerlink" title="打个总结儿"></a>打个总结儿</h1><p>总而言之，「游戏化」是一种比较新的设计方法，它还在努力地证明，这种方法是行之有效的、可靠的。但不可否认的是，它的受欢迎程度也正在迅速增长，并且极有可能在短时间内成为最有效的设计方法之一。</p>
+<p><br></p>
+<hr>
+<p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，求指正呀，非常感谢。^^<br>感谢原文作者及所有分享想法与经验的人。^^</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/译文/" rel="tag"># 译文</a>
+          
+            <a href="/tags/用户体验/" rel="tag"># 用户体验</a>
+          
+            <a href="/tags/游戏化/" rel="tag"># 游戏化</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/01/二零一九年九月/" rel="next" title="二零一九年九月">
+                <i class="fa fa-chevron-left"></i> 二零一九年九月
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright"><span class="author" itemprop="copyrightHolder">ZYUN</span>
+&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  
+  
+
+  
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://  hexo.io">Hexo</a> </div>
+
+
+
+
+
+
+
+</span></div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
