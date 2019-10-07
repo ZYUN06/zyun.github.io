@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<script>
+    (function(){
+        if(''){
+            if (prompt('在下面输入 201905 就可以打开这篇文章啦。说是文章，其实只是我自己的碎碎念儿，不看也可以呐。') !== ''){
+                alert('我也不知道为啥会再弹一次，要不再点一次「确定」吧，点完就会回到原来的页面啦。不要生气，今天也要开心呐。');
+                history.back();
+            }
+        }
+    })();
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="译文,用户体验,游戏化,排行榜,行为改变,用户激励,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="ZYUN" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="原文：How to Motivate With Leaderboards作者：Omar Ganai  &amp;amp; Steven M. Ledbetter （20180601）翻译：ZYUN（20191001）预计阅读时长：21m 23s">
+<meta name="keywords" content="译文,用户体验,游戏化,排行榜,行为改变,用户激励">
+<meta property="og:type" content="article">
+<meta property="og:title" content="译 | 如何设计一个能够激励用户的排行榜">
+<meta property="og:url" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/index.html">
+<meta property="og:site_name" content="ZYUN">
+<meta property="og:description" content="原文：How to Motivate With Leaderboards作者：Omar Ganai  &amp;amp; Steven M. Ledbetter （20180601）翻译：ZYUN（20191001）预计阅读时长：21m 23s">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard0.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard1.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard2.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard3.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard4：Nike+.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard5：Grasshopper_small.jpeg">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard6：Feedback.png">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard7：Google.gif">
+<meta property="og:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard8：Choice.png">
+<meta property="og:updated_time" content="2019-10-07T04:32:04.551Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="译 | 如何设计一个能够激励用户的排行榜">
+<meta name="twitter:description" content="原文：How to Motivate With Leaderboards作者：Omar Ganai  &amp;amp; Steven M. Ledbetter （20180601）翻译：ZYUN（20191001）预计阅读时长：21m 23s">
+<meta name="twitter:image" content="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard0.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/">
+
+
+
+
+
+  <title>译 | 如何设计一个能够激励用户的排行榜 | ZYUN</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="site-title">ZYUN</span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zyunn.com/2019/10/06/译-如何设计一个能够激励用户的排行榜/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZYUN">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZYUN">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">译 | 如何设计一个能够激励用户的排行榜</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-06T18:27:57+08:00">
+                2019-10-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/译文/" itemprop="url" rel="index">
+                    <span itemprop="name">译文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="question"> 原文：<a href="https://medium.com/practical-motivation-science/how-to-motivate-with-leaderboards-da5a461fb2f6" target="_blank" rel="noopener">How to Motivate With Leaderboards</a><br>作者：<a href="https://medium.com/u/cf22fe1d90f2?source=post_page-----da5a461fb2f6----------------------" target="_blank" rel="noopener">Omar Ganai</a>  &amp; <a href="https://medium.com/u/1600c74f3fd8?source=post_page-----da5a461fb2f6----------------------" target="_blank" rel="noopener">Steven M. Ledbetter</a> （20180601）<br>翻译：ZYUN（20191001）<br>预计阅读时长：21m 23s </blockquote>
+
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard0.png"><a id="more"></a>
+<p>参与游戏的人都应该拥有参与的自由，这是所有游戏的不变原则，不管是有限的还是无限的游戏。但凡谁被强制必须参与，那他将无法真正地参与。（James P. Carse，《有限与无限的游戏》）</p>
+<p>现在，排行榜已经成为一种常见的行为改变的设计模式。它最初起源于电子游戏，后来便慢慢渗透到 “游戏化” 产品中。例如：</p>
+<ul>
+<li>Nike+（<a href="https://medium.com/u/d96f6fec203b?source=post_page-----da5a461fb2f6----------------------" target="_blank" rel="noopener">Nike Better World</a> 的产品），一款可穿戴健身设备，通过让用户与朋友争夺活动积分，来激励用户更多地进行锻炼。</li>
+<li><a href="https://medium.com/u/1448b9a4b778?source=post_page-----da5a461fb2f6----------------------" target="_blank" rel="noopener">Opower</a>，一个能源跟踪平台，通过显示用户使用了多少能源及其与邻居的比较，来激励用户减少能量消耗。</li>
+<li><a href="https://medium.com/u/8df3bf3c40ae?source=post_page-----da5a461fb2f6----------------------" target="_blank" rel="noopener">GitHub</a> ，一个面向程序员的项目管理平台，通过公开显示各个社区成员的项目贡献值，来激励用户更多地为项目做贡献。</li>
+</ul>
+<p>产品经理和设计师们经常使用排行榜来激励人们更多地使用他们的产品。我们认为，排行榜具有激励作用是因为人们喜欢胜利，而胜利之所以具有激励作用，是因为它赋予我们在社区中的地位。但是，有些人并不想要赢，他们只想避免失败。<br><br></p>
+<h1 id="竞争：关乎能力（胜任感）"><a href="#竞争：关乎能力（胜任感）" class="headerlink" title="竞争：关乎能力（胜任感）"></a>竞争：关乎能力（胜任感）</h1><p>「想要赢」和「想要避免失败」之间有着微妙但至关重要的区别。<br>Murayama 和 Elliot 在 2012 年的荟萃分析发现，竞争的效果就取决于参与者意识中的这种区别。当某人希望表现得比其他人更好时，他们就往往能从竞争中获益。但是，当他们希望避免表现得比其他人更差时，竞争就会降低他们的表现。<br>类似地，Burnette 等在 2013 年的荟萃分析发现，获胜的欲望与目标达成呈正相关，而避免失败的愿望则与目标达成呈负相关。<br>最后，Senko 等在 2017 年的荟萃分析发现，只有在采取的策略能给人以控制感时，「想要赢」才会提高参与者的表现。<br>因此，「想赢」本身并不足以使参与者免受竞争性社会环境的负面影响。</p>
+<p>促进竞争的设计模式（如，排行榜）并不能提升所有情况下所有用户的积极性和表现。只有在让用户感到自己很有能力时，竞争才有利于提高动力和成就。排行榜的关键在于激励性，你可以以此为目标进行设计。<br><br></p>
+<h1 id="什么样的排行榜具有激励性"><a href="#什么样的排行榜具有激励性" class="headerlink" title="什么样的排行榜具有激励性"></a>什么样的排行榜具有激励性</h1><p>有限游戏以取胜为目的，而无限游戏以延续游戏为目的。（James P. Carse，《有限与无限的游戏》）</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E8%87%AA%E6%88%91%E6%B1%BA%E5%AE%9A%E8%AB%96" target="_blank" rel="noopener">自我决定理论</a>认为，人类会寻求、参与那些提供并满足三大基本心理需求的活动。所有用户与界面的交互，都有可能支持或阻碍这些基本心理需求的满足。因此，如果你想设计一个能够激励用户的排行榜，并且希望避免让一大批关注它的人失去动力，那么请在设计时牢记这三个需求。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard1.png">
+<ul>
+<li>优秀的排行榜可以满足能力（胜任）需求。当你完成具有挑战性的目标时，你将获得这种满足感。你会感觉自己很有主见、很有能力，感觉自己有所成就。能力（胜任）的反面是感觉无能和无助。</li>
+<li>优秀的排行榜可以满足关系（归属）需求。当你感到被在乎的人理解和喜欢时，你将获得这种满足感。你会感觉与一起玩儿的人更亲近。归属感的反面是感到被排斥、被隔离。</li>
+<li>优秀的排行榜可以满足自主需求。当你带着自我认可和选择去行动时，你将获得这种满足感。自主的反面是被强迫、被操纵。</li>
+</ul>
+<p>设计良好的排行榜可以促进大多数情况下大多数用户对能力、关系和自主需求的满足。最重要的是，这些需求之间不会互相对立。<br>相反地，如果排行榜让用户处于与对手的<a href="https://zh.wikipedia.org/wiki/%E9%9B%B6%E5%92%8C%E5%8D%9A%E5%BC%88" target="_blank" rel="noopener">零和博弈</a>当中，那它就会存在风险，因为它要求用户必须在能力需求和关系需求中做出选择。这种情况下，排行榜可以满足少数用户的能力需求，但却会让大多数用户为关系需求感到沮丧。</p>
+<p>你可以把它想象成为和朋友们的「游戏之夜」。对于大多数人来说，游戏之夜的意义在于找个借口出去和朋友们一块玩儿（关系需求）。所以，大多数棋类游戏都是低赌注的游戏（大富翁货币不是法定货币）和合作游戏（团队、情侣等）。这就是为了防止竞争将「关系」和「能力」对立起来。<br>但如果你选择了一款与此设计不同的游戏，如，Strip Poker 或者 Fight Club，那么很有可能你就会看到你的朋友们受到激励的负面影响。如果你的朋友选择离开游戏，你们之间的友谊可能会因此被破坏；而那些留下来的朋友，又会觉得自己是被迫加入游戏的。这两种情况都是关系需求和自主需求对立的例子。<br>留下来继续参与游戏的朋友儿可能也会后悔，毕竟左支右绌顾此失彼。</p>
+<p>接下来，我们会将排行榜细分为「行为改变」相关的各个因素，并研究每个因素对「基本心理需求」的影响。通过这种分解来展示如何设计这些元素可以让它们满足能力、关系和自主需求，而不是彼此冲突。<br><br></p>
+<h1 id="排行榜涉及的行为改变因素"><a href="#排行榜涉及的行为改变因素" class="headerlink" title="排行榜涉及的行为改变因素"></a>排行榜涉及的行为改变因素</h1><p>每一项行为改变技术（BCT）都是一个「导致行为发生改变的有效因素」。「人类行为改变项目」已经在研究中确定了 93 种这样的行为改变技术。而排行榜则由其中的 4 种组成，如下图所示。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard2.png">
+<p>反过来，这四种行为改变技术中的每一种都有可能支持或阻碍三大「基本心理需求」。<br>下面，我们将逐步介绍如何设计每种行为改变技术来支持「基本心理需求」，而不是阻碍它们的实现。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard3.png">
+<h3 id="1-目标设定"><a href="#1-目标设定" class="headerlink" title="1. 目标设定"></a>1. 目标设定</h3><p>我们都知道，目标是行为的目的。而作为行为改变的有效基石，「目标设定」指的就是，给予用户目标，并引导他们去实现目标。实际上，排行榜这种设计形式本身就已经向用户传达出「获得第一名」的目标。不需要特别说明，参与者自然就会把「成为榜单第一」作为自己的目标。例如：</p>
+<ul>
+<li>Nike+ 根据健身活动积分对用户进行排名，所以用户的目标就是获得最高的活动积分。</li>
+<li>Opower 将用户的能源消耗按「kWh/天」进行排序，所以用户的目标就是使用最少的能源。</li>
+<li>Github 按照项目贡献值对用户进行排名，所以用户的目标就是最大化自己的贡献值。</li>
+</ul>
+<p>然而，并非所有的目标对所有人来说都是平等的。同一个目标，对有些人来说，可能有助于实现基本心理需求，而对另外一些人来说，则有可能成为阻碍。这取决于个人因素和社会环境。<br>例如，对于一个中年白人来说，「跑完马拉松」可能是一个具有激励性的目标，而对于一个正在贫穷中挣扎的肯尼亚小孩来说，这个目标则毫无意义。<br>就像 34 岁的马拉松世界纪录保持者 Dennis Kipruto Kimetto，他直到 27 岁才开始参加比赛，因为对于他来说，跑步无法养家糊口。</p>
+<p>下面我们将提供一些设计目标的建议，这些建议有助于令目标满足大多数人的心理需求，从而促使他们愿意花足够多的时间去使用你的产品，并真正从中受益。</p>
+<h5 id="1）给用户一个实现目标的有效理由"><a href="#1）给用户一个实现目标的有效理由" class="headerlink" title="1）给用户一个实现目标的有效理由"></a>1）给用户一个实现目标的有效理由</h5><p>以一种对用户来说有意义的方式，向用户提供一个努力参与排行榜竞争是值得的的理由。从自我决定理论的角度来说，许多产品都向用户提供了错误的理由，并因此损害了长期的用户参与度。<br>错误的理由包括：</p>
+<ul>
+<li>强调无意义的激励。例如，“你应该参与竞争，因为你将赢得所有的分数！”</li>
+<li>强调提升自我和自豪感。例如，“你应该努力赢得胜利，因为只有最优秀、最聪明的人才能赢得胜利！”</li>
+<li>强调人们无法控制的结果。例如，“你应该参与竞争，这样你才能保持对他人的吸引力。”<br>以上这些理由都冒着让用户感到愚蠢、孤立和被操纵的风险。</li>
+</ul>
+<p>正确的理由包括：</p>
+<ul>
+<li>强调好玩、享受乐趣或兴趣。例如：“快来参加这个好玩的活动吧，你将了解到与自己有关的有趣的事儿！”</li>
+<li>强调与用户个人价值或社会认同的一致性。例如：“我们是一个享受乐趣的社区，所以我们共同参与、彼此帮助，一起成为更好的人！”</li>
+<li>强调自主性。例如：“你可能会喜欢参加这个”，而不是 “你必须参与”。<br>当用户参与你的排行榜时，以上这些理由都有助于实现他们的能力、关系和自主需求。</li>
+</ul>
+<h5 id="2）用内在目标去包装外在目标"><a href="#2）用内在目标去包装外在目标" class="headerlink" title="2）用内在目标去包装外在目标"></a>2）用内在目标去包装外在目标</h5><p>我们强烈建议给予用户内在目标，而不是外在目标。内在目标是指追求对我们来说有内在价值的目标，如，快乐、获得掌控感、建立亲密关系等。外部目标是指追求工具性结果，如，财富、名望和魅力。<br>总的来说，跟外在目标相比，内在目标：</p>
+<ul>
+<li>能更好地满足我们的基本心理需求</li>
+<li>能促使我们投入更多的努力</li>
+<li>更易于追求</li>
+<li>能促进更深入的学习</li>
+<li>能提高对当前任务的注意力</li>
+<li>最有趣的是，比起出于外在原因追求外在目标（譬如为了名利而赚钱），出于内在原因追求外在目标（譬如为了养家糊口而赚钱），更能满足人的基本心理需求。</li>
+</ul>
+<p>所以，请为用户创造内在目标，而不是外在目标。</p>
+<ul>
+<li>内在目标的例子：“旨在提高您的技能。”</li>
+<li>外在目标的例子：“志在成名。”</li>
+</ul>
+<p>如果必须使用外在目标，请将其嵌在内在目标中。<br>例如：“为赢得积分而努力（积分属于活动本身以外的东西，所以这是一个外在目标），但更重要的是，为我们的项目做出贡献，让世界变得更美好（大部分人都认同让世界变得更好具有内在价值，所以这是一个内在目标）。”</p>
+<h5 id="3）将个人目标嵌入团队目标"><a href="#3）将个人目标嵌入团队目标" class="headerlink" title="3）将个人目标嵌入团队目标"></a>3）将个人目标嵌入团队目标</h5><p>让竞争变成更多地是和其他人一块玩儿，而不是独自成为优胜者。<br>例如，向用户展示追求个人目标是如何帮助团队中的其他人的。这样有助于实现关系需求，因为它鼓励用户互相合作，而不是彼此对抗。</p>
+<p>Nike+ 几乎快做到这一点了，因为他们说，“有了团队目标，你们可以一起变成绿色”。但随后，他们又说，“或者自己单独去争夺排行榜榜首的位置“，这反而又让能力需求和关系需求对立起来了。如果想修正这个问题的话，可以改成这么说，“或者专注于提高您的个人分数”。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard4：Nike+.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">Nike+ 的排行榜</p><center></center></center></p>
+<h3 id="2-反馈"><a href="#2-反馈" class="headerlink" title="2. 反馈"></a>2. 反馈</h3><p>反馈有助于用户了解他们从 A 点（他们当前的位置）到 B 点（他们的目标）的进度。每当用户查看排行榜时，他们就会收到反馈。例如：</p>
+<ul>
+<li>Nike+ 会告诉用户他们目前赚了多少活动积分。</li>
+<li>Opower 会告诉用户他们目前使用了多少能源。</li>
+<li>Github 会告诉用户他们已向项目提交了多少次。<br>设计良好的反馈可以提升能力感和掌控感。一般而言，如果用户越频繁地查看进度，那他们取得的进展就会越多。因此，可参考下面这些方法，设计一些让用户觉得有用和愉悦的反馈。</li>
+</ul>
+<h5 id="1）就有意义的标准向用户提供反馈"><a href="#1）就有意义的标准向用户提供反馈" class="headerlink" title="1）就有意义的标准向用户提供反馈"></a>1）就有意义的标准向用户提供反馈</h5><p>根据用户的目标，以对用户有意义的标准，向用户提供反馈。<br>例如，在 Google 的 Grasshopper 中，用户在登录时会得到反馈。具体来说就是，它告诉用户如何进行选择（自主需求），并让他们对做出选择感觉良好（能力需求）。它还让用户感觉他们正处于「正确的位置」，这也满足了能力需求。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard5：Grasshopper_small.jpeg">
+<p><center><p style="font-size:12px; color:#C0C0C0">Grasshopper：用户登录时的反馈</p><center></center></center></p>
+<h5 id="2）提供多级反馈"><a href="#2）提供多级反馈" class="headerlink" title="2）提供多级反馈"></a>2）提供多级反馈</h5><p>为用户提供多种评估进度的方法。但是，应主要关注进度和表现情况的反馈，因为此类指标最受用户控制，最有可能满足用户的能力需求。以下是一些其他类型的反馈的示例。</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard6：Feedback.png">
+<h5 id="3）提供生动有趣的反馈"><a href="#3）提供生动有趣的反馈" class="headerlink" title="3）提供生动有趣的反馈"></a>3）提供生动有趣的反馈</h5><p>生动有趣的反馈也是一种积极反馈，可以给用户小小的行为和成就带来丰富的、惊喜的感官体验。即使没有很大的挑战需要克服，这样的反馈也能给予用户一种能力感。下面的例子还是来自 Google 的 Grasshopper：</p>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard7：Google.gif">
+<p><center><p style="font-size:12px; color:#C0C0C0">Grasshopper 的一个有趣的反馈</p><center></center></center></p>
+<h3 id="3-社会比较"><a href="#3-社会比较" class="headerlink" title="3. 社会比较"></a>3. 社会比较</h3><p>社会比较用于向用户展示他们与其他人之间的关系。对用户进行排名就是社会比较中的一种。例如：</p>
+<ul>
+<li>Nike+ 将用户的健身活动分数与朋友们进行比较，并进行排名。</li>
+<li>Opower 将用户的能源消耗量与邻居进行比较，并进行排名。</li>
+<li>Github 根据对每个项目的提交次数对用户进行排名，并与其他项目社区成员作比较。</li>
+</ul>
+<p>社会比较是一种复杂的行为改变技巧。如果做得好，它可以满足能力需求和关系需求。但如果做得不好，它就会使人们感到无力胜任和被排斥。<br>默认情况下，人们会选择与在某些方面比自己更优秀的人进行比较。即使收到负面反馈，我们也会向上比较。这一点确实出人意料，你可能会认为：在收到负面反馈后，我们更有可能将自己与比我们更差的人进行比较，以使自己感觉良好。<br>但实际上，人们更愿意向上比较。而且，当我们在能力或者一个我们不太了解的纬度上进行比较时，这种向上比较的倾向更强烈。<br>所以，社会比较最大的风险在于，人们会将自己与比自己更优秀的人进行比较，从而阻碍能力和关系需求的实现。</p>
+<p>此外，社会比较的另一个风险是，它只在短期内有效。自卑感和排斥感促使人们去做你希望他们用你的产品去做的事情。然而，这可能会以他们与产品的长期互动为代价。最后，人们会放弃使用那些让他们长期感到内疚和羞愧的东西。<br>以下是一些设计社会比较的建议，这些比较有助于实现基本心理需要，而不是成为阻碍。</p>
+<h5 id="1）帮助用户消除失败的痛苦"><a href="#1）帮助用户消除失败的痛苦" class="headerlink" title="1）帮助用户消除失败的痛苦"></a>1）帮助用户消除失败的痛苦</h5><p>在竞争的环境中，获胜、失败、排名等等这些东西几乎无法不给人一种「与其他人相比，我表现如何」的想法。获胜的感觉当然很好，但失败可就不那么好了。以下是一些避免让用户感到失败的方法：</p>
+<ul>
+<li>告诉失败者他们已经达到了令人满意的能力的标准，即使他们失败了。<br>例如：“你在这个项目中提交的次数，超过了 70% 的人！”</li>
+<li>告诉失败者他们获得这个分数的原因。这样，他们就能知道如何去提高，这有助于实现能力需求，并且让他们知道这个竞争是公平的，这同时又满足了关系需求。<br>例如：“你可能只是在这个衡量指标上稍微有点不足。如果换成那个衡量指标，你可能就会处于领先地位哦。”</li>
+<li>承认失败确实令人不快。这有助于满足自主需求，因为你没有让他们为感到难过这一点感到难过。<br>例如：“哎呀好可惜！真是咫尺之遥！”</li>
+<li>让失败者选择是否继续参与（这满足自主需求）。例如：</li>
+</ul>
+<img src="/2019/10/06/译-如何设计一个能够激励用户的排行榜/Leaderboard8：Choice.png">
+<p><center><p style="font-size:12px; color:#C0C0C0">失败的用户可选择继续游戏或放弃</p><center></center></center></p>
+<h5 id="2）引导用户专注于参与和建立社交关系上，而不是赢得胜利"><a href="#2）引导用户专注于参与和建立社交关系上，而不是赢得胜利" class="headerlink" title="2）引导用户专注于参与和建立社交关系上，而不是赢得胜利"></a>2）引导用户专注于参与和建立社交关系上，而不是赢得胜利</h5><p>让获胜者和失败者都专注于表现得更好，而不是获取胜利。例如，给用户一些提示，告知他们如何收获乐趣、提升自我或者与其他参与者建立联系。<br>比起独自失败，和队友一起失败比较不会让人失去动力。因此，要强调用户之间的联系和关系。<br>例如：“其他一些用户也正在研究这个问题，你想他们谈谈吗？”</p>
+<h5 id="3）把用户放在可以改进或者已经改进的指标上进行比较"><a href="#3）把用户放在可以改进或者已经改进的指标上进行比较" class="headerlink" title="3）把用户放在可以改进或者已经改进的指标上进行比较"></a>3）把用户放在可以改进或者已经改进的指标上进行比较</h5><p>根据用户选择参与活动或使用你的产品的频率，对他们进行排名，而不是根据那些他们自己也难以控制的结果的衡量（例如体重减轻了几磅）进行排名。这个方法是为了满足他们的能力需求。当你接收到负面的社会比较时，专注于学习和掌控感可以降低你关于能力的挫败感。<br>例如：“你已经连续参加 10 天啦，不如去看看其他连续参加 10 天的用户最后是怎么做到的吧。”</p>
+<h5 id="4）增加比较的难度"><a href="#4）增加比较的难度" class="headerlink" title="4）增加比较的难度"></a>4）增加比较的难度</h5><p>当人们不得不将自己与两个以上的选择进行比较时，社会比较的负面影响就没那么强烈了。所以这个时候，你可以把所有关于可用性的想法都抛在脑后，去设计一些策略让用户难以进行比较。<br>例如，我们知道一个人很难同时掌握 7 条以上的信息。所以我们可以将用户和其他 7 个以上的用户进行比较。或者，对每个人使用唯一的指标，这样，排行榜看起来就更像是一个让你看到每个人的个人进步的地方，而不是一个让你将自己与其他人进行比较的地方。<br>例如，“你想通过查看其他人的一些指标来了解他们是如何学习和进步的吗？”</p>
+<h3 id="4-社交奖励"><a href="#4-社交奖励" class="headerlink" title="4. 社交奖励"></a>4. 社交奖励</h3><p>社交奖励是针对用户付出的努力而给予的非物质、非金钱的奖励。历史上最成功的社交奖励可能是 Fackbook 的 Like（点赞）。很多产品都声称获胜者将赢得他所关心的人的赞誉，以此来证明排行榜的合理性，而这些赞誉也将激励用户继续使用产品。<br>但是，众所周知，奖励会削弱内在动机。所以，我们需要谨慎使用奖励。<br>如果你希望用户执行的行为是重复性的、无聊的，那么将奖励和付出联系起来是合理的。但如果你希望用户执行的行为是需要创造力的，那么奖励应该是令人惊喜的、内在的。<br>我们可以通过以下的方法来设计奖励，以规避它们对基本心理需要的损害。</p>
+<h5 id="1）提供意外的奖励"><a href="#1）提供意外的奖励" class="headerlink" title="1）提供意外的奖励"></a>1）提供意外的奖励</h5><p>给予用户意想不到的奖励，因为与努力相关的可预测的回报会削弱内在动机。<br>例如：“这是你连续参与的第 47 天啦。我们特地为你准备了一份奖品！”</p>
+<h5 id="2）把奖励和人生大目标联系起来"><a href="#2）把奖励和人生大目标联系起来" class="headerlink" title="2）把奖励和人生大目标联系起来"></a>2）把奖励和人生大目标联系起来</h5><p>例如，“你在排行榜上获得的积分越多，我们向你选择的慈善机构捐赠的就越多哦！”</p>
+<h5 id="3）使用内在或象征性的奖励"><a href="#3）使用内在或象征性的奖励" class="headerlink" title="3）使用内在或象征性的奖励"></a>3）使用内在或象征性的奖励</h5><p>例如：星巴克的奖励卡会奖励给人们更多的咖啡，而不是直接付给他们现金。<br><br></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>每当我们提到「如何激励用户」时，我们总是很容易就脱口而出：“排行榜”。它真的是无处不在，以致于我们都很少去思考它到底是如何激励用户的，以及它到底传递出了哪些设计的价值。<br>我们通过将排行榜分解为「行为改变技术」相关的四个因素，向你展示了这些因素是如何组合在一起来激发或降低用户积极性的。现在你也知道了，这实际上取决于这些因素如何共同协作来支持或阻碍基本心理需求的实现。<br>如果你花时间重新审视自己的排行榜，并仔细思考我们的口号：“能力和关系重于竞争”，那么，你将更有可能激励用户去使用你的产品，而不是让他们感觉自己是个失败者。</p>
+<p><br></p>
+<hr>
+<p style="font-size:14px; color:#C0C0C0">以上翻译包含个人理解，仅用于个人学习。如有错误，欢迎指正啊，非常感谢～<br>感谢原文作者及所有分享想法与经验的人们～</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/译文/" rel="tag"># 译文</a>
+          
+            <a href="/tags/用户体验/" rel="tag"># 用户体验</a>
+          
+            <a href="/tags/游戏化/" rel="tag"># 游戏化</a>
+          
+            <a href="/tags/排行榜/" rel="tag"># 排行榜</a>
+          
+            <a href="/tags/行为改变/" rel="tag"># 行为改变</a>
+          
+            <a href="/tags/用户激励/" rel="tag"># 用户激励</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/01/二零一九年十月/" rel="next" title="二零一九年十月">
+                <i class="fa fa-chevron-left"></i> 二零一九年十月
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright"><span class="author" itemprop="copyrightHolder">ZYUN</span>
+&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  
+  
+
+  
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://  hexo.io">Hexo</a> </div>
+
+
+
+
+
+
+
+</span></div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
