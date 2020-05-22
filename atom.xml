@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zyunn.com/"/>
-  <updated>2019-10-07T04:32:04.551Z</updated>
+  <updated>2020-05-22T05:46:27.754Z</updated>
   <id>http://zyunn.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二零二零年五月</title>
+    <link href="http://zyunn.com/2020/05/22/%E4%BA%8C%E9%9B%B6%E4%BA%8C%E9%9B%B6%E5%B9%B4%E4%BA%94%E6%9C%88/"/>
+    <id>http://zyunn.com/2020/05/22/二零二零年五月/</id>
+    <published>2020-05-22T03:53:38.000Z</published>
+    <updated>2020-05-22T05:46:27.754Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="2020-05-01"><a href="#2020-05-01" class="headerlink" title="# 2020.05.01"></a># 2020.05.01</h3><hr><p>今天是 2020 年 5 月 1 号，天生我材没什么用。<br>少年穷则一直穷。<a id="more"></a><br><br><br></p><h3 id="2020-05-02"><a href="#2020-05-02" class="headerlink" title="# 2020.05.02"></a># 2020.05.02</h3><hr><p>今天是 2020 年 5 月 2 号，人生得意须尽欢。<br>明天更比今天难。<br><br><br></p><h3 id="2019-09-03"><a href="#2019-09-03" class="headerlink" title="# 2019.09.03"></a># 2019.09.03</h3><hr><p>今天是 2020 年 5 月 3 号，来时路远。<br>欣喜相逢。<br>前程似锦。<br>早生贵子。<br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;2020-05-01&quot;&gt;&lt;a href=&quot;#2020-05-01&quot; class=&quot;headerlink&quot; title=&quot;# 2020.05.01&quot;&gt;&lt;/a&gt;# 2020.05.01&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;今天是 2020 年 5 月 1 号，天生我材没什么用。&lt;br&gt;少年穷则一直穷。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="碎碎念儿" scheme="http://zyunn.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5%E5%84%BF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>译 | 如何设计一个能够激励用户的排行榜</title>
@@ -490,34 +511,6 @@
       <category term="设计导航" scheme="http://zyunn.com/tags/%E8%AE%BE%E8%AE%A1%E5%AF%BC%E8%88%AA/"/>
     
       <category term="设计系统" scheme="http://zyunn.com/tags/%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Social Proof 社会认同</title>
-    <link href="http://zyunn.com/2019/05/14/Social-Proof-%E7%A4%BE%E4%BC%9A%E8%AE%A4%E5%90%8C/"/>
-    <id>http://zyunn.com/2019/05/14/Social-Proof-社会认同/</id>
-    <published>2019-05-14T02:41:21.000Z</published>
-    <updated>2019-06-06T06:26:24.294Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="什么是社会认同？"><a href="#什么是社会认同？" class="headerlink" title="什么是社会认同？"></a>什么是社会认同？</h2><p><a href="https://en.wikipedia.org/wiki/Social_proof" target="_blank" rel="noopener">社会认同</a>是 <a href="https://en.wikipedia.org/wiki/Robert_Cialdini" target="_blank" rel="noopener">Robert Cialdini</a> 在其著作<a href="https://www.amazon.com/dp/006124189X?tag=useitcomusablein" target="_blank" rel="noopener">《影响力：说服心理学》</a>（最早出版于 1984 年）中提出的 6 个影响力原则之一。它描述了一种心理和社会现象：人们通过模仿他人的行为，以试图在特定的情况下采取行为。<a id="more"></a></p><p>简单地说，社会认同就是个人在群体中的从众心理。当人们处在新的或不熟悉的环境中时，我们会倾向于认为他人比自己更加了解所处的情况，他人的行为也总是合理和正确的。因此，个人会做出和他人一样的行为，以获得群体的认同。</p><h2 id="社会认同相关的社会现象"><a href="#社会认同相关的社会现象" class="headerlink" title="社会认同相关的社会现象"></a>社会认同相关的社会现象</h2><p>如果你在逛街时看到某家店门口排着长长的队，你可能会认为这家店很有人气，从而认为这家店的商品一定很好，因此，自己也很想去买。</p><h2 id="社会认同在产品设计中的应用"><a href="#社会认同在产品设计中的应用" class="headerlink" title="社会认同在产品设计中的应用"></a>社会认同在产品设计中的应用</h2><p>人们会通过借鉴他人的行为来指导自己的行为。因此，我们可以在产品设计中体现一个群体的行为、观点和建议等等，以影响用户。</p><p>• &nbsp; <strong>统计数据，如点赞数、评论数、阅读数等等</strong><br><img src="/2019/05/14/Social-Proof-社会认同/1.png"></p><p>• &nbsp; <strong>展示良好的积极评价或推荐</strong><br><img src="/2019/05/14/Social-Proof-社会认同/2.png"></p><p>• &nbsp; <strong>提供其他用户的行为或结果的可见性</strong><br>如，朋友在看，XX 刚刚喜欢了这首歌，喜欢这首歌的人也喜欢 XX，XX 刚刚点了这家外卖，XX 刚刚购买了这款大衣<br><img src="/2019/05/14/Social-Proof-社会认同/3.png"><br><br></p><hr><p style="font-size:14px; color:#C0C0C0">本文参考了一些网络文章和书籍的内容，并由笔者自己整理而成，仅作为个人学习笔记使用。如有错误，求指正呀，非常感谢。^^</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;什么是社会认同？&quot;&gt;&lt;a href=&quot;#什么是社会认同？&quot; class=&quot;headerlink&quot; title=&quot;什么是社会认同？&quot;&gt;&lt;/a&gt;什么是社会认同？&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Social_proof&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;社会认同&lt;/a&gt;是 &lt;a href=&quot;https://en.wikipedia.org/wiki/Robert_Cialdini&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Robert Cialdini&lt;/a&gt; 在其著作&lt;a href=&quot;https://www.amazon.com/dp/006124189X?tag=useitcomusablein&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;《影响力：说服心理学》&lt;/a&gt;（最早出版于 1984 年）中提出的 6 个影响力原则之一。它描述了一种心理和社会现象：人们通过模仿他人的行为，以试图在特定的情况下采取行为。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="设计理论" scheme="http://zyunn.com/categories/%E8%AE%BE%E8%AE%A1%E7%90%86%E8%AE%BA/"/>
-    
-    
-      <category term="原创" scheme="http://zyunn.com/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-      <category term="用户体验" scheme="http://zyunn.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
-    
-      <category term="心理学" scheme="http://zyunn.com/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-      <category term="说服心理学" scheme="http://zyunn.com/tags/%E8%AF%B4%E6%9C%8D%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
